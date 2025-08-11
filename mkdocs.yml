@@ -1,3 +1,6 @@
 site_name: My Docs
 theme:
   name: readthedocs
+nav:
+  - Home: index.md
+  - Folder: folder/folder.md
