@@ -1,6 +1,6 @@
-site_name: My Docs
+site_name: Мои дела
 theme:
   name: readthedocs
 nav:
   - Home: index.md
-  - Folder: folder/folder.md
+  - Купить маме обувь: folder/folder.md
