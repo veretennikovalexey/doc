@@ -3,4 +3,4 @@ theme:
   name: readthedocs
 nav:
   - Home: index.md
-  - Купить маме обувь: folder/folder.md
+  - Купить люстру: folder/folder.md
