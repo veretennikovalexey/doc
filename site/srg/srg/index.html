@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Четвёртое ТО - Мои дела</title>
+    <title>srg - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "\u0427\u0435\u0442\u0432\u0451\u0440\u0442\u043e\u0435 \u0422\u041e";
-        var mkdocs_page_input_path = "folder\\folder.md";
+        var mkdocs_page_name = "srg";
+        var mkdocs_page_input_path = "srg\\srg.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,16 +43,20 @@
                 <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Четвёртое ТО</a>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../../arx/arx/">arx</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../srg/srg/">srg</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">srg</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Корус</a>
+    </li>
+    </ul>
                 </li>
               </ul>
       </div>
@@ -69,7 +73,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Четвёртое ТО</li>
+      <li class="breadcrumb-item active">srg</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -78,17 +82,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p>ТЕХИНКОМ, Chery</p>
-<p>https://techincom-chery.ru/</p>
-<p>https://chery-techincom.ru/</p>
-<p>+7 (495) 186-60-92</p>
-<p>23 августа в 18:00</p>
+                <h1 id="srgmd">srg.md</h1>
+<h2 id="_1">Корус</h2>
+<ul>
+<li>Заказ R260-&gt;KOD <strong>283</strong> Импорт заказов EDI Эдисофт, Корус</li>
+</ul>
+<p>\fabius\d$\fabius\EDI_Korus\IN\ORDERS\</p>
+<p>y:\Fabius\Edi_Korus\IN\ORDERS\</p>
+<p>3124019258_ORDERS_4607816029995_P.xml</p>
+<p><a href="https://wiki.sftserv.ru/index.php/ORDERS">wiki.sftserv.ru/index.php/ORDERS</a> описание всех тегов по-русски</p>
+<pre><code class="language-xml">&lt;Document-Order&gt;
+   &lt;Order-Header&gt;
+      &lt;OrderNumber&gt;7605373549&lt;/OrderNumber&gt;
+      &lt;OrderDate&gt;2025-08-14&lt;/OrderDate&gt;
+      &lt;ExpectedDeliveryDate&gt;2025-08-15&lt;/ExpectedDeliveryDate&gt;
+      &lt;ContractNumber&gt;9999999999&lt;/ContractNumber&gt;
+      &lt;CorrectionNumber&gt;1&lt;/CorrectionNumber&gt;
+      &lt;Currency&gt;RUB&lt;/Currency&gt;
+      &lt;DocumentFunctionCode&gt;O&lt;/DocumentFunctionCode&gt;
+      &lt;GeneralInformation/&gt;
+   &lt;/Order-Header&gt;
+   &lt;Order-Parties&gt;
+      &lt;Buyer&gt;
+         &lt;ILN&gt;4606038001260&lt;/ILN&gt;
+         &lt;Name&gt;ООО &quot;АГРОТОРГ&quot;&lt;/Name&gt;
+      &lt;/Buyer&gt;
+      &lt;Seller&gt;
+         &lt;ILN&gt;4607816029995&lt;/ILN&gt;
+         &lt;CodeByBuyer&gt;7000068753&lt;/CodeByBuyer&gt;
+      &lt;/Seller&gt;
+      &lt;DeliveryPoint&gt;
+         &lt;ILN&gt;4606038419300&lt;/ILN&gt;
+      &lt;/DeliveryPoint&gt;
+   &lt;/Order-Parties&gt;
+   &lt;Order-Lines&gt;
+      &lt;Line&gt;
+         &lt;Line-Item&gt;
+            &lt;LineNumber&gt;1&lt;/LineNumber&gt;
+            &lt;EAN&gt;4607816020442&lt;/EAN&gt;
+            &lt;BuyerItemCode&gt;4386567&lt;/BuyerItemCode&gt;
+            &lt;SupplierItemCode&gt;1542&lt;/SupplierItemCode&gt;
+            &lt;ItemDescription&gt;СУРГУТ.ХЗ Тесто ДЛЯ ПИЦЦЫ дрож.охл.500г&lt;/ItemDescription&gt;
+            &lt;OrderedQuantity&gt;10&lt;/OrderedQuantity&gt;
+            &lt;OrderedUnitPacksize&gt;1.000&lt;/OrderedUnitPacksize&gt;
+            &lt;UnitOfMeasure&gt;PCE&lt;/UnitOfMeasure&gt;
+            &lt;OrderedUnitNetPrice&gt;43.68&lt;/OrderedUnitNetPrice&gt;
+            &lt;OrderedUnitGrossPrice&gt;48.05&lt;/OrderedUnitGrossPrice&gt;
+            &lt;GrossAmount&gt;480.48&lt;/GrossAmount&gt;
+            &lt;TaxRate&gt;10.0&lt;/TaxRate&gt;
+         &lt;/Line-Item&gt;
+      &lt;/Line&gt;
+   &lt;/Order-Lines&gt;
+   &lt;Order-Summary&gt;
+      &lt;TotalLines&gt;1&lt;/TotalLines&gt;
+      &lt;TotalOrderedAmount&gt;10&lt;/TotalOrderedAmount&gt;
+      &lt;TotalGrossAmount&gt;480.48&lt;/TotalGrossAmount&gt;
+   &lt;/Order-Summary&gt;
+&lt;/Document-Order&gt;
+</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../.." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../arx/arx/" class="btn btn-neutral float-right" title="arx">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../arx/arx/" class="btn btn-neutral float-left" title="arx"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -111,10 +167,8 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../arx/arx/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../../arx/arx/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -3,4 +3,6 @@ theme:
   name: readthedocs
 nav:
   - Home: index.md
-  - Купить люстру: folder/folder.md
+  - Четвёртое ТО: folder/folder.md
+  - arx: arx/arx.md
+  - srg: srg/srg.md
