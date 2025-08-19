@@ -4,9 +4,9 @@
 
 * Заказ R260->KOD **283** Импорт заказов EDI Эдисофт, Корус
 
-\\fabius\d$\fabius\EDI_Korus\IN\ORDERS\
+\\fabius\d$\fabius\EDI_Korus\IN\ORDERS
 
-y:\Fabius\Edi_Korus\IN\ORDERS\
+y:\Fabius\Edi_Korus\IN\ORDERS
 
 3124019258_ORDERS_4607816029995_P.xml
 
@@ -64,3 +64,81 @@ y:\Fabius\Edi_Korus\IN\ORDERS\
 ```
 
 ## Корус ORDRSP
+
+y:\Fabius\Edi_Korus\Out\ORDRSP
+
+```xml
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+	<Document-OrderResponse>
+		<OrderResponse-Header>
+			<OrderResponseNumber>10929</OrderResponseNumber>
+			<OrderResponseDate>2025-08-20</OrderResponseDate>
+			<ExpectedDeliveryDate>2025-08-20</ExpectedDeliveryDate>
+			<ExpectedDeliveryTime>12:40</ExpectedDeliveryTime>
+			<OrderNumber />
+			<OrderDate>2025-08-20</OrderDate>
+			<ResponseType>29</ResponseType>
+		</OrderResponse-Header>
+		<OrderResponse-Parties>
+			<Buyer>
+				<ILN />
+			</Buyer>
+			<Seller>
+				<ILN>4607816029995</ILN>
+			</Seller>
+			<DeliveryPoint>
+				<ILN />
+			</DeliveryPoint>
+		</OrderResponse-Parties>
+		<OrderResponse-Lines>
+			<Line>
+				<Line-Item>
+					<LineNumber>1</LineNumber>
+					<EAN />
+					<LineItemStatus>5</LineItemStatus>
+					<BuyerItemCode>1520</BuyerItemCode>
+					<SupplierItemCode>1520</SupplierItemCode>
+					<ItemDescription>Хлеб пшен.из муки высшего сорта форм.(0,5)</ItemDescription>
+					<OrderedQuantity>21.000</OrderedQuantity>
+					<QuantityToBeDelivered>21.000</QuantityToBeDelivered>
+					<UnitPacksizeToBeDelivered>16.000</UnitPacksizeToBeDelivered>
+					<UnitOfMeasure>PCE</UnitOfMeasure>
+					<Currency>RUB</Currency>
+					<OrderedUnitNetPrice>45.18</OrderedUnitNetPrice>
+					<OrderedUnitGrossPrice>49.70</OrderedUnitGrossPrice>
+					<TaxRate>10</TaxRate>
+					<NetAmount>948.82</NetAmount>
+					<GrossAmount>1043.70</GrossAmount>
+					<TaxAmount>94.88</TaxAmount>
+				</Line-Item>
+			</Line>
+			<Line>
+				<Line-Item>
+					<LineNumber>2</LineNumber>
+					<EAN />
+					<LineItemStatus>5</LineItemStatus>
+					<BuyerItemCode>42</BuyerItemCode>
+					<SupplierItemCode>42</SupplierItemCode>
+					<ItemDescription>Хлеб "Прибрежный" (0,3)</ItemDescription>
+					<OrderedQuantity>17.000</OrderedQuantity>
+					<QuantityToBeDelivered>17.000</QuantityToBeDelivered>
+					<UnitPacksizeToBeDelivered>24.000</UnitPacksizeToBeDelivered>
+					<UnitOfMeasure>PCE</UnitOfMeasure>
+					<Currency>RUB</Currency>
+					<OrderedUnitNetPrice>36.59</OrderedUnitNetPrice>
+					<OrderedUnitGrossPrice>40.25</OrderedUnitGrossPrice>
+					<TaxRate>10</TaxRate>
+					<NetAmount>622.05</NetAmount>
+					<GrossAmount>684.25</GrossAmount>
+					<TaxAmount>62.20</TaxAmount>
+				</Line-Item>
+			</Line>
+		</OrderResponse-Lines>
+		<OrderResponse-Summary>
+			<TotalLines>2</TotalLines>
+			<TotalNetAmount>1570.87</TotalNetAmount>
+			<TotalGrossAmount>1727.95</TotalGrossAmount>
+			<TotalTaxAmount>157.08</TotalTaxAmount>
+		</OrderResponse-Summary>
+	</Document-OrderResponse>
+```
