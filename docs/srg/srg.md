@@ -4,7 +4,7 @@
 
 * Заказ R260->KOD **283** Импорт заказов EDI Эдисофт, Корус
 
-\\fabius\d$\fabius\EDI_Korus\IN\ORDERS
+\\\fabius\d$\fabius\EDI_Korus\IN\ORDERS
 
 y:\Fabius\Edi_Korus\IN\ORDERS
 
