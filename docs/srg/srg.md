@@ -1,6 +1,6 @@
 # srg.md
 
-## Корус
+## Корус ORDERS
 
 * Заказ R260->KOD **283** Импорт заказов EDI Эдисофт, Корус
 
@@ -62,3 +62,5 @@ y:\Fabius\Edi_Korus\IN\ORDERS\
    </Order-Summary>
 </Document-Order>
 ```
+
+## Корус ORDRSP
