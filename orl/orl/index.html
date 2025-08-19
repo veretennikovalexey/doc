@@ -58,6 +58,12 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">orl</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#zak-prim">Документ ZAK - PRIM Примечание</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -93,6 +99,79 @@
 <pre><code class="language-php">if !Import_Edi_r641('Orders')
   DoImpExp('10',,,105)
 endif
+</code></pre>
+<h2 id="zak-prim">Документ ZAK - PRIM Примечание</h2>
+<p>R260 (105) 19.08.2025 14:11:26</p>
+<p>\\hk-srv\export\Korus\ORDERS_c7712208-60c6-b2b5-bb9b-fb262c37b782.xml</p>
+<h2 id="r260">R260 Импорт/экспорт файлов</h2>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Наименование настройки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>105</td>
+<td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
+</tr>
+</tbody>
+</table>
+<h2 id="orders">Корус ORDERS</h2>
+<p>z:\Korus</p>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;Document-Order&gt;
+  &lt;Order-Header&gt;
+    &lt;OrderNumber&gt;ЦЗР-092256 255504&lt;/OrderNumber&gt;
+    &lt;OrderDate&gt;2025-07-14&lt;/OrderDate&gt;
+    &lt;OrderTime&gt;00:00&lt;/OrderTime&gt;
+    &lt;ExpectedDeliveryDate&gt;2025-07-20&lt;/ExpectedDeliveryDate&gt;
+    &lt;ExpectedDeliveryTime&gt;00:00&lt;/ExpectedDeliveryTime&gt;
+    &lt;Currency&gt;RUB&lt;/Currency&gt;
+    &lt;DocumentFunctionCode&gt;O&lt;/DocumentFunctionCode&gt;
+    &lt;CreationDateTime&gt;2025-07-14T10:06:47.563Z&lt;/CreationDateTime&gt;
+  &lt;/Order-Header&gt;
+  &lt;Order-Parties&gt;
+    &lt;Buyer&gt;
+      &lt;ILN&gt;4680015840004&lt;/ILN&gt;
+    &lt;/Buyer&gt;
+    &lt;Seller&gt;
+      &lt;ILN&gt;4607042009990&lt;/ILN&gt;
+      &lt;TaxID&gt;5753003842&lt;/TaxID&gt;
+      &lt;UtilizationRegisterNumber&gt;575301001&lt;/UtilizationRegisterNumber&gt;
+      &lt;CodeByBuyer&gt;1284&lt;/CodeByBuyer&gt;
+      &lt;Name&gt;АО «Орловский хлебокомбинат»&lt;/Name&gt;
+    &lt;/Seller&gt;
+    &lt;DeliveryPoint&gt;
+      &lt;ILN&gt;4680015845504&lt;/ILN&gt;
+      &lt;LocationName&gt;ООО &quot;Европа&quot; -&quot;Европа - 55&quot;&lt;/LocationName&gt;
+    &lt;/DeliveryPoint&gt;
+    &lt;Invoicee&gt;
+      &lt;ILN&gt;4680015840004&lt;/ILN&gt;
+    &lt;/Invoicee&gt;
+  &lt;/Order-Parties&gt;
+  &lt;Order-Lines&gt;
+    &lt;Line&gt;
+      &lt;Line-Item&gt;
+        &lt;LineNumber&gt;1&lt;/LineNumber&gt;
+        &lt;EAN&gt;4607042004780&lt;/EAN&gt;
+        &lt;BuyerItemCode&gt;805568&lt;/BuyerItemCode&gt;
+        &lt;ItemDescription&gt;СУШКИ ЧАЙНЫЕ 250Г ОРЛОВСКИЙ ХЛЕБОКОМБИНАТ&lt;/ItemDescription&gt;
+        &lt;OrderedQuantity&gt;15.000&lt;/OrderedQuantity&gt;
+        &lt;UnitOfMeasure&gt;PCE&lt;/UnitOfMeasure&gt;
+        &lt;OrderedUnitGrossPrice&gt;46.6000&lt;/OrderedUnitGrossPrice&gt;
+        &lt;GrossAmount&gt;699.0000&lt;/GrossAmount&gt;
+        &lt;TaxRate&gt;10&lt;/TaxRate&gt;
+      &lt;/Line-Item&gt;
+    &lt;/Line&gt;
+  &lt;/Order-Lines&gt;
+  &lt;Order-Summary&gt;
+    &lt;TotalLines&gt;1&lt;/TotalLines&gt;
+    &lt;TotalOrderedAmount&gt;15.000&lt;/TotalOrderedAmount&gt;
+    &lt;TotalGrossAmount&gt;699.00&lt;/TotalGrossAmount&gt;
+  &lt;/Order-Summary&gt;
+&lt;/Document-Order&gt;
 </code></pre>
               
             </div>
