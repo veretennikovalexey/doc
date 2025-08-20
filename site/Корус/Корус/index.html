@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>dtv - Мои дела</title>
+    <title>Корус - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "dtv";
-        var mkdocs_page_input_path = "dtv\\dtv.md";
+        var mkdocs_page_name = "\u041a\u043e\u0440\u0443\u0441";
+        var mkdocs_page_input_path = "\u041a\u043e\u0440\u0443\u0441\\\u041a\u043e\u0440\u0443\u0441.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -43,8 +43,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/">Контур</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../%D0%9A%D0%BE%D1%80%D1%83%D1%81/%D0%9A%D0%BE%D1%80%D1%83%D1%81/">Корус</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Корус</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -55,18 +57,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../arx/arx/">arx</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">dtv</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#zak">Документ ZAK</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_1">Контур</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#_2">Контур УКД</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../dtv/dtv/">dtv</a>
                 </li>
               </ul>
               <ul>
@@ -111,7 +103,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">dtv</li>
+      <li class="breadcrumb-item active">Корус</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -120,88 +112,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="dtvmd">dtv.md</h1>
-<h2 id="zak">Документ ZAK</h2>
-<p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
-<p>Реквизит PRIM Примечание 1 _</p>
-<p>Принято из EDI (из Xml (192) 19.08.2025 11:51:23)</p>
-<h2 id="r260">R260 Импорт/экспорт файлов</h2>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Наименование настройки</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>192</td>
-<td>Прием заказов EDI (Контур)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_1">Контур</h2>
-<table>
-<thead>
-<tr>
-<th>Тип</th>
-<th>Имя</th>
-<th>Путь</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ORDERS</td>
-<td>Заказ</td>
-<td>z:\EDI Контур\Заказы</td>
-</tr>
-<tr>
-<td>ORDRSP</td>
-<td>Подтверждение заказа</td>
-<td>z:\EDI Контур\Подтверждение заказов</td>
-</tr>
-<tr>
-<td>DESADV</td>
-<td>Уведомление об отгрузке</td>
-<td>z:\EDI Контур\Уведомление об отгрузке</td>
-</tr>
-<tr>
-<td>RECADV</td>
-<td>Акт приёмки</td>
-<td>z:\EDI Контур\Акты приемки</td>
-</tr>
-<tr>
-<td>INVDOP</td>
-<td>УПД</td>
-<td>z:\EDI Контур\УПД</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_2">Контур УКД</h2>
-<p>z:\EDI Контур\УКД</p>
-<p>Реализация - Документы - "Торг-2" - акты о расхождении при приемке ТМЦ - Коррект.счета (кн.покупок) по актам "Торг-2" - Коррект.счета (кн.покупок) по актам "Торг-2" полностью</p>
-<p><strong>ON_KORSCHFDOPPR</strong></p>
-<p>R260 Импорт/экспорт файлов</p>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Наименование настройки</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>293</td>
-<td>Экспорт УКД в формате XML ФНС (ON_KORSCHFDOPPR)</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="md">Корус.md</h1>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../arx/arx/" class="btn btn-neutral float-left" title="arx"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../ehc/ehc/" class="btn btn-neutral float-right" title="ehc">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/" class="btn btn-neutral float-left" title="Контур"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Exite/Exite/" class="btn btn-neutral float-right" title="Exite">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -224,10 +141,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../arx/arx/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../ehc/ehc/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../Exite/Exite/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

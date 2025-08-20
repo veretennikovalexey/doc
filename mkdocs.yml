@@ -3,6 +3,7 @@ theme:
   name: readthedocs
 nav:
   - Контур: Контур/Контур.md
+  - Корус: Корус/Корус.md
   - Exite: Exite/Exite.md
   - arx: arx/arx.md
   - dtv: dtv/dtv.md
