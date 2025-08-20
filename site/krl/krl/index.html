@@ -40,11 +40,11 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/">Контур</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../Exite/Exite/">Exite</a>
                 </li>
               </ul>
               <ul>
@@ -55,24 +55,20 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../dtv/dtv/">dtv</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ehc/ehc/">ehc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ghc/ghc/">ghc</a>
+                </li>
+              </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">krl</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#zer">Документ ZER</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#exite">Exite</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exite-orders">Exite ORDERS</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exite-ordrsp">Exite ORDRSP</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exite-desadv">Exite DESADV</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exite-recadv">Exite RECADV</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exite-on_nschfdoppr">Exite ON_NSCHFDOPPR</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exite-on_nkorschfdoppr">Exite ON_NKORSCHFDOPPR</a>
     </li>
     </ul>
                 </li>
@@ -83,6 +79,14 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../../srg/srg/">srg</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
                 </li>
               </ul>
       </div>
@@ -112,448 +116,45 @@
 <h2 id="zer">Документ ZER</h2>
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Ошибки и отказы при автоматическом приеме заказов торговли - Ошибки в заказах за месяц</p>
 <h2 id="exite">Exite</h2>
-<p>s:\Base\Fabius\Edi\Exite</p>
-<h2 id="exite-orders">Exite ORDERS</h2>
-<p>s:\Base\Fabius\Edi\Exite\Orders</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;!-- Объявление XML --&gt;
-&lt;ORDER&gt; &lt;!-- Корневой элемент документа (Заказ) --&gt;
-  &lt;DOCUMENTNAME&gt;220&lt;/DOCUMENTNAME&gt; &lt;!-- Код типа документа (EDI) --&gt;
-  &lt;NUMBER&gt;28090827&lt;/NUMBER&gt;      &lt;!-- Номер заказа --&gt;
-  &lt;DATE&gt;2025-07-24&lt;/DATE&gt;         &lt;!-- Дата формирования заказа --&gt;
-  &lt;DELIVERYDATE&gt;2025-07-25&lt;/DELIVERYDATE&gt; &lt;!-- Плановая дата доставки --&gt;
-  &lt;DELIVERYTIME&gt;05:00&lt;/DELIVERYTIME&gt;     &lt;!-- Плановое время доставки --&gt;
-  &lt;CAMPAIGNNUMBER&gt;21463&lt;/CAMPAIGNNUMBER&gt; &lt;!-- Номер кампании/акции --&gt;
-  &lt;CURRENCY&gt;RUB&lt;/CURRENCY&gt;         &lt;!-- Валюта заказа (Рубли) --&gt;
-  &lt;INFO&gt;RETAIL &lt;/INFO&gt;             &lt;!-- Доп. информация (Розница) --&gt;
-  &lt;HEAD&gt;                           &lt;!-- Шапка заказа --&gt;
-    &lt;BUYER&gt;4690202000005&lt;/BUYER&gt;   &lt;!-- GLN покупателя --&gt;
-    &lt;INVOICEPARTNER&gt;4690202000005&lt;/INVOICEPARTNER&gt; &lt;!-- GLN плательщика --&gt;
-    &lt;SUPPLIER&gt;4603243999993&lt;/SUPPLIER&gt;   &lt;!-- GLN поставщика --&gt;
-    &lt;RECIPIENT&gt;4603243999993&lt;/RECIPIENT&gt; &lt;!-- GLN грузополучателя --&gt;
-    &lt;DELIVERYPLACE&gt;4690689000000&lt;/DELIVERYPLACE&gt; &lt;!-- GLN места доставки --&gt;
-    &lt;SENDER&gt;4690202000005&lt;/SENDER&gt;       &lt;!-- GLN отправителя --&gt;
-    &lt;EDIINTERCHANGEID&gt;0000000560215543&lt;/EDIINTERCHANGEID&gt; &lt;!-- ID EDI-документа --&gt;
-    &lt;POSITION&gt;                      &lt;!-- Позиция в заказе --&gt;
-      &lt;POSITIONNUMBER&gt;00010&lt;/POSITIONNUMBER&gt; &lt;!-- Номер строки --&gt;
-      &lt;PRODUCT&gt;4603243006103&lt;/PRODUCT&gt; &lt;!-- Штрихкод товара (GTIN) --&gt;
-      &lt;PRODUCTIDBUYER&gt;216676006&lt;/PRODUCTIDBUYER&gt; &lt;!-- Внутренний код товара покупателя --&gt;
-      &lt;ORDEREDQUANTITY&gt;48.000&lt;/ORDEREDQUANTITY&gt; &lt;!-- Заказанное количество --&gt;
-      &lt;ORDERUNIT&gt;PCE&lt;/ORDERUNIT&gt;    &lt;!-- Единица измерения (Штуки) --&gt;
-      &lt;ORDERPRICE&gt;24.90&lt;/ORDERPRICE&gt; &lt;!-- Цена за единицу --&gt;
-      &lt;QUANTITYOFCUINTU&gt;1&lt;/QUANTITYOFCUINTU&gt; &lt;!-- Кол-во единиц в потребительской упаковке --&gt;
-      &lt;CHARACTERISTIC&gt;              &lt;!-- Характеристики товара --&gt;
-        &lt;DESCRIPTION&gt;ПИРОЖ ПОЛОСКА ПЕСОЧ 100Г КАЛИНИНГРАДХЛЕБ&lt;/DESCRIPTION&gt; &lt;!-- Наименование --&gt;
-      &lt;/CHARACTERISTIC&gt;
-    &lt;/POSITION&gt;
-  &lt;/HEAD&gt;
-&lt;/ORDER&gt;
-</code></pre>
-<h2 id="exite-ordrsp">Exite ORDRSP</h2>
-<p>s:\Base\Fabius\Edi\Exite\Ordrsp</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;WINDOWS-1251&quot;?&gt; &lt;!-- Кодировка документа (Windows-1251) --&gt;
-&lt;ORDRSP&gt; &lt;!-- Ответ на заказ (Order Response) --&gt;
-  &lt;NUMBER&gt;24751&lt;/NUMBER&gt; &lt;!-- Номер ответа на заказ --&gt;
-  &lt;DATE&gt;2025-07-27&lt;/DATE&gt; &lt;!-- Дата формирования ответа --&gt;
-  &lt;TIME&gt;15:46&lt;/TIME&gt; &lt;!-- Время формирования ответа --&gt;
-  &lt;ORDERNUMBER&gt;00773594&lt;/ORDERNUMBER&gt; &lt;!-- Номер исходного заказа --&gt;
-  &lt;ORDERDATE&gt;2025-07-22&lt;/ORDERDATE&gt; &lt;!-- Дата исходного заказа --&gt;
-  &lt;DELIVERYDATE&gt;2025-07-27&lt;/DELIVERYDATE&gt; &lt;!-- Плановая дата доставки --&gt;
-  &lt;DELIVERYTIME&gt;10:00&lt;/DELIVERYTIME&gt; &lt;!-- Плановое время доставки --&gt;
-  &lt;CURRENCY&gt;RUB&lt;/CURRENCY&gt; &lt;!-- Валюта (Рубли) --&gt;
-  &lt;ACTION&gt;29&lt;/ACTION&gt; &lt;!-- Код действия (подтверждение/изменение) --&gt;
-  &lt;TRANSPORTQUANTITY&gt;1&lt;/TRANSPORTQUANTITY&gt; &lt;!-- Количество транспортных мест --&gt;
-  &lt;HEAD&gt; &lt;!-- Шапка документа --&gt;
-    &lt;BUYER&gt;4660000949998&lt;/BUYER&gt; &lt;!-- GLN покупателя --&gt;
-    &lt;SUPPLIER&gt;4603243999993&lt;/SUPPLIER&gt; &lt;!-- GLN поставщика --&gt;
-    &lt;DELIVERYPLACE&gt;4660000940926&lt;/DELIVERYPLACE&gt; &lt;!-- GLN места доставки --&gt;
-    &lt;SENDER&gt;4603243999993&lt;/SENDER&gt; &lt;!-- GLN отправителя --&gt;
-    &lt;RECIPIENT&gt;4660000949998&lt;/RECIPIENT&gt; &lt;!-- GLN получателя --&gt;
-    &lt;EDIINTERCHANGEID&gt;24751&lt;/EDIINTERCHANGEID&gt; &lt;!-- Идентификатор EDI-документа --&gt;
-    &lt;POSITION&gt; &lt;!-- Позиция в заказе --&gt;
-      &lt;POSITIONNUMBER&gt;1&lt;/POSITIONNUMBER&gt; &lt;!-- Номер строки --&gt;
-      &lt;PRODUCT&gt;4603243001719&lt;/PRODUCT&gt; &lt;!-- Штрихкод товара (GTIN) --&gt;
-      &lt;PRODUCTIDBUYER&gt;358575&lt;/PRODUCTIDBUYER&gt; &lt;!-- Внутренний код товара у покупателя --&gt;
-      &lt;PRODUCTIDSUPPLIER&gt;23&lt;/PRODUCTIDSUPPLIER&gt; &lt;!-- Внутренний код товара у поставщика --&gt;
-      &lt;DESCRIPTION&gt;КОРЖИКИ &quot;МОЛОЧНЫЕ&quot; 0.1 УП.&lt;/DESCRIPTION&gt; &lt;!-- Наименование товара --&gt;
-      &lt;PRICE&gt;30.00&lt;/PRICE&gt; &lt;!-- Цена без НДС --&gt;
-      &lt;PRICEWITHVAT&gt;36.00&lt;/PRICEWITHVAT&gt; &lt;!-- Цена с НДС --&gt;
-      &lt;VAT&gt;20&lt;/VAT&gt; &lt;!-- Ставка НДС (%) --&gt;
-      &lt;PRODUCTTYPE&gt;1&lt;/PRODUCTTYPE&gt; &lt;!-- Тип товара --&gt;
-      &lt;ORDEREDQUANTITY&gt;3.000&lt;/ORDEREDQUANTITY&gt; &lt;!-- Заказанное количество --&gt;
-      &lt;ACCEPTEDQUANTITY&gt;3.000&lt;/ACCEPTEDQUANTITY&gt; &lt;!-- Подтверждённое количество --&gt;
-    &lt;/POSITION&gt;
-  &lt;/HEAD&gt;
-&lt;/ORDRSP&gt;
-</code></pre>
-<h2 id="exite-desadv">Exite DESADV</h2>
-<p>s:\Base\Fabius\Edi\Exite\Desadv</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;WINDOWS-1251&quot;?&gt; &lt;!-- Кодировка документа (Windows-1251) --&gt;
-&lt;DESADV&gt; &lt;!-- Уведомление о поставке --&gt;
-  &lt;NUMBER&gt;1200750965&lt;/NUMBER&gt; &lt;!-- Номер уведомления о поставке --&gt;
-  &lt;DATE&gt;2025-07-20&lt;/DATE&gt; &lt;!-- Дата формирования уведомления --&gt;
-  &lt;DELIVERYDATE&gt;2025-07-20&lt;/DELIVERYDATE&gt; &lt;!-- Дата поставки --&gt;
-  &lt;DELIVERYTIME&gt;22:27&lt;/DELIVERYTIME&gt; &lt;!-- Время поставки --&gt;
-  &lt;ORDERNUMBER /&gt; &lt;!-- Номер заказа (пусто) --&gt;
-  &lt;ORDERDATE&gt;0000-00-00&lt;/ORDERDATE&gt; &lt;!-- Дата заказа (не указана) --&gt;
-  &lt;DELIVERYNOTENUMBER&gt;1200750965&lt;/DELIVERYNOTENUMBER&gt; &lt;!-- Номер транспортной накладной --&gt;
-  &lt;DELIVERYNOTEDATE&gt;2025-07-20&lt;/DELIVERYNOTEDATE&gt; &lt;!-- Дата транспортной накладной --&gt;
-  &lt;TTNNUMBER&gt;1200750965&lt;/TTNNUMBER&gt; &lt;!-- Номер ТТН (Товарно-транспортной накладной) --&gt;
-  &lt;INVOICENUMBER&gt;204798&lt;/INVOICENUMBER&gt; &lt;!-- Номер счёта-фактуры --&gt;
-  &lt;TRANSPORTQUANTITY&gt;1&lt;/TRANSPORTQUANTITY&gt; &lt;!-- Количество транспортных мест --&gt;
-  &lt;CAMPAIGNNUMBER&gt;28121&lt;/CAMPAIGNNUMBER&gt; &lt;!-- Номер кампании/акции --&gt;
-  &lt;HEAD&gt; &lt;!-- Шапка документа --&gt;
-    &lt;SUPPLIER&gt;4603243999993&lt;/SUPPLIER&gt; &lt;!-- GLN поставщика --&gt;
-    &lt;BUYER&gt;9864398867277&lt;/BUYER&gt; &lt;!-- GLN покупателя --&gt;
-    &lt;DELIVERYPLACE /&gt; &lt;!-- GLN места доставки (пусто) --&gt;
-    &lt;SENDER&gt;4603243999993&lt;/SENDER&gt; &lt;!-- GLN отправителя --&gt;
-    &lt;RECIPIENT&gt;9864398867277&lt;/RECIPIENT&gt; &lt;!-- GLN получателя --&gt;
-    &lt;EDIINTERCHANGEID&gt;1200750965&lt;/EDIINTERCHANGEID&gt; &lt;!-- Идентификатор EDI-документа --&gt;
-    &lt;PACKINGSEQUENCE&gt; &lt;!-- Упаковочная последовательность --&gt;
-      &lt;HIERARCHICALID&gt;1&lt;/HIERARCHICALID&gt; &lt;!-- Иерархический ID упаковки --&gt;
-      &lt;POSITION&gt; &lt;!-- Позиция товара --&gt;
-        &lt;POSITIONNUMBER&gt;1&lt;/POSITIONNUMBER&gt; &lt;!-- Номер строки --&gt;
-        &lt;PRODUCT&gt;4603243003669&lt;/PRODUCT&gt; &lt;!-- Штрихкод товара (GTIN) --&gt;
-        &lt;PRODUCTIDSUPPLIER&gt;648&lt;/PRODUCTIDSUPPLIER&gt; &lt;!-- Внутренний код поставщика --&gt;
-        &lt;PRODUCTIDBUYER&gt;648&lt;/PRODUCTIDBUYER&gt; &lt;!-- Внутренний код покупателя --&gt;
-        &lt;DESCRIPTION&gt;ХЛЕБ СТОЛИЧНЫЙ (нарезка) 0.6 УП.&lt;/DESCRIPTION&gt; &lt;!-- Наименование товара --&gt;
-        &lt;DELIVEREDQUANTITY&gt;15.000&lt;/DELIVEREDQUANTITY&gt; &lt;!-- Поставленное количество --&gt;
-        &lt;DELIVEREDUNIT&gt;PCE&lt;/DELIVEREDUNIT&gt; &lt;!-- Единица измерения поставки (Штуки) --&gt;
-        &lt;ORDEREDQUANTITY&gt;15.000&lt;/ORDEREDQUANTITY&gt; &lt;!-- Заказанное количество --&gt;
-        &lt;ORDERUNIT&gt;PCE&lt;/ORDERUNIT&gt; &lt;!-- Единица измерения заказа (Штуки) --&gt;
-        &lt;MANUFACTUREDATE&gt;2025-07-20&lt;/MANUFACTUREDATE&gt; &lt;!-- Дата производства --&gt;
-        &lt;SHELFLIFEDATE&gt;2025-07-20&lt;/SHELFLIFEDATE&gt; &lt;!-- Дата срока годности --&gt;
-        &lt;EXPIREDATE&gt;2025-07-24&lt;/EXPIREDATE&gt; &lt;!-- Дата истечения срока годности --&gt;
-        &lt;FINALDAYOFUSE&gt;2025-07-24&lt;/FINALDAYOFUSE&gt; &lt;!-- Последний день использования --&gt;
-        &lt;AMOUNT&gt;669.00&lt;/AMOUNT&gt; &lt;!-- Сумма без НДС --&gt;
-        &lt;COUNTRYORIGIN&gt;RU&lt;/COUNTRYORIGIN&gt; &lt;!-- Страна происхождения (Россия) --&gt;
-        &lt;PRICE&gt;44.60&lt;/PRICE&gt; &lt;!-- Цена за единицу без НДС --&gt;
-        &lt;PRICEWITHVAT&gt;49.06&lt;/PRICEWITHVAT&gt; &lt;!-- Цена за единицу с НДС --&gt;
-        &lt;TAXRATE&gt;10&lt;/TAXRATE&gt; &lt;!-- Ставка НДС (%) --&gt;
-        &lt;TAXAMOUNT&gt;66.90&lt;/TAXAMOUNT&gt; &lt;!-- Сумма НДС --&gt;
-        &lt;AMOUNTWITHVAT&gt;735.90&lt;/AMOUNTWITHVAT&gt; &lt;!-- Итоговая сумма с НДС --&gt;
-      &lt;/POSITION&gt;
-    &lt;/PACKINGSEQUENCE&gt;
-  &lt;/HEAD&gt;
-&lt;/DESADV&gt;
-</code></pre>
-<h2 id="exite-recadv">Exite RECADV</h2>
-<p>s:\Base\Fabius\Edi\Exite\Recadv</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;!-- Объявление XML (версия 1.0, кодировка UTF-8) --&gt;
-&lt;RECADV&gt; &lt;!-- Уведомление о получении товара --&gt;
-  &lt;NUMBER&gt;33MY0100053347&lt;/NUMBER&gt; &lt;!-- Номер документа RECADV --&gt;
-  &lt;DATE&gt;2025-08-03&lt;/DATE&gt; &lt;!-- Дата составления уведомления --&gt;
-  &lt;RECEPTIONDATE&gt;2025-08-03&lt;/RECEPTIONDATE&gt; &lt;!-- Дата получения товара --&gt;
-  &lt;ORDERNUMBER&gt;7602162490&lt;/ORDERNUMBER&gt; &lt;!-- Номер заказа --&gt;
-  &lt;ORDERDATE&gt;2025-08-02&lt;/ORDERDATE&gt; &lt;!-- Дата заказа --&gt;
-  &lt;DESADVNUMBER&gt;11&lt;/DESADVNUMBER&gt; &lt;!-- Номер уведомления о поставке --&gt;
-  &lt;BUYERACTNUMBER&gt;6094191305&lt;/BUYERACTNUMBER&gt; &lt;!-- Номер акта покупателя --&gt;
-  &lt;HEAD&gt; &lt;!-- Основная информация о документе --&gt;
-    &lt;SUPPLIER&gt;4603243999993&lt;/SUPPLIER&gt; &lt;!-- GLN поставщика --&gt;
-    &lt;RECIPIENT&gt;4603243999993&lt;/RECIPIENT&gt; &lt;!-- GLN получателя --&gt;
-    &lt;BUYER&gt;4606038001260&lt;/BUYER&gt; &lt;!-- GLN покупателя --&gt;
-    &lt;SENDER&gt;4606038001260&lt;/SENDER&gt; &lt;!-- GLN отправителя --&gt;
-    &lt;DELIVERYPLACE&gt;4606038270093&lt;/DELIVERYPLACE&gt; &lt;!-- GLN места доставки --&gt;
-    &lt;EDIINTERCHANGEID&gt;98984205&lt;/EDIINTERCHANGEID&gt; &lt;!-- Идентификатор EDI-обмена --&gt;
-    &lt;PACKINGSEQUENCE&gt; &lt;!-- Информация об упаковке --&gt;
-      &lt;HIERARCHICALID&gt;1&lt;/HIERARCHICALID&gt; &lt;!-- Иерархический идентификатор упаковки --&gt;
-      &lt;POSITION&gt; &lt;!-- Позиция товара --&gt;
-        &lt;POSITIONNUMBER&gt;1&lt;/POSITIONNUMBER&gt; &lt;!-- Номер позиции --&gt;
-        &lt;PRODUCT&gt;4603243007971&lt;/PRODUCT&gt; &lt;!-- GTIN товара --&gt;
-        &lt;PRODUCTIDBUYER&gt;3679864&lt;/PRODUCTIDBUYER&gt; &lt;!-- Внутренний код покупателя --&gt;
-        &lt;PRODUCTIDSUPPLIER&gt;416&lt;/PRODUCTIDSUPPLIER&gt; &lt;!-- Внутренний код поставщика --&gt;
-        &lt;ORDERQUANTITY&gt;20.000&lt;/ORDERQUANTITY&gt; &lt;!-- Заказанное количество --&gt;
-        &lt;ACCEPTEDQUANTITY&gt;20.000&lt;/ACCEPTEDQUANTITY&gt; &lt;!-- Принятое количество --&gt;
-        &lt;ACCEPTEDUNIT&gt;PCE&lt;/ACCEPTEDUNIT&gt; &lt;!-- Единица измерения (штуки) --&gt;
-        &lt;PRICE&gt;26.2000&lt;/PRICE&gt; &lt;!-- Цена без НДС --&gt;
-        &lt;PRICEWITHVAT&gt;28.8200&lt;/PRICEWITHVAT&gt; &lt;!-- Цена с НДС --&gt;
-      &lt;/POSITION&gt;
-    &lt;/PACKINGSEQUENCE&gt;
-  &lt;/HEAD&gt;
-&lt;/RECADV&gt;
-</code></pre>
-<h2 id="exite-on_nschfdoppr">Exite ON_NSCHFDOPPR</h2>
-<p>s:\Base\Fabius\Edi\Exite\Upd</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;WINDOWS-1251&quot;?&gt; &lt;!-- Кодировка документа --&gt;
-&lt;Файл ИдФайл=&quot;ON_NSCHFDOPPR_2BM-7734381384-773401001-201606251141176510887_2LD5C4CBB98-DE2F-4FF6-BFC4-896D49D7AFF1_20250818_875DC53D-339E-42FF-B11B-62F2615F22C9_0_0_0_0_0_00&quot; 
-     ВерсФорм=&quot;5.03&quot; 
-     ВерсПрог=&quot;EdiLink&quot;&gt; &lt;!-- Служебная информация файла --&gt;
-  &lt;Документ КНД=&quot;1115131&quot; 
-            Функция=&quot;СЧФДОП&quot; 
-            ПоФактХЖ=&quot;Документ об отгрузке товаров (выполнении работ), передаче имущественных прав (документ об оказании услуг)&quot; 
-            НаимДокОпр=&quot;Счет-фактура и документ об отгрузке товаров (выполнении работ), передаче имущественных прав (документ об оказании услуг)&quot; 
-            ДатаИнфПр=&quot;18.08.2025&quot; 
-            ВремИнфПр=&quot;12.12.41&quot; 
-            НаимЭконСубСост=&quot;ООО &amp;quot;Калининградхлеб&amp;quot;&quot;&gt; &lt;!-- Основные реквизиты документа --&gt;
-    &lt;СвСчФакт НомерДок=&quot;236285&quot; ДатаДок=&quot;18.08.2025&quot;&gt; &lt;!-- Сведения о счете-фактуре --&gt;
-      &lt;СвПрод&gt; &lt;!-- Сведения о продавце --&gt;
-        &lt;ИдСв&gt;
-          &lt;СвЮЛУч НаимОрг=&quot;Общество с ограниченной ответственностью &amp;quot;Калининградхлеб&amp;quot;&quot; 
-                 ИННЮЛ=&quot;5018167458&quot; 
-                 КПП=&quot;501801001&quot;/&gt; &lt;!-- Юридические данные продавца --&gt;
-        &lt;/ИдСв&gt;
-        &lt;Адрес ГЛНМеста=&quot;4603243999993&quot;&gt; &lt;!-- Адрес продавца --&gt;
-          &lt;АдрРФ Индекс=&quot;141080&quot; 
-                 КодРегион=&quot;50&quot; 
-                 НаимРегион=&quot;Московская область&quot; 
-                 Город=&quot;Королев г&quot; 
-                 Улица=&quot;Калининградская ул&quot; 
-                 Дом=&quot;7&quot;/&gt;
-        &lt;/Адрес&gt;
-        &lt;Контакт&gt;
-          &lt;Тлф&gt;(499)707-18-90&lt;/Тлф&gt; &lt;!-- Контактные данные --&gt;
-        &lt;/Контакт&gt;
-      &lt;/СвПрод&gt;
-      &lt;ГрузОт&gt;
-        &lt;ОнЖе&gt;он же&lt;/ОнЖе&gt; &lt;!-- Грузоотправитель (совпадает с продавцом) --&gt;
-      &lt;/ГрузОт&gt;
-      &lt;ГрузПолуч&gt; &lt;!-- Сведения о грузополучателе --&gt;
-        &lt;ИдСв&gt;
-          &lt;СвЮЛУч НаимОрг=&quot;ООО &amp;quot;КАЛАЧ&amp;quot;&quot; 
-                 ИННЮЛ=&quot;7734381384&quot;/&gt;
-        &lt;/ИдСв&gt;
-        &lt;Адрес ГЛНМеста=&quot;9864399200936&quot;&gt;
-          &lt;АдрРФ Индекс=&quot;123298&quot; 
-                 КодРегион=&quot;77&quot; 
-                 НаимРегион=&quot;Москва&quot; 
-                 Город=&quot;Москва г&quot; 
-                 Улица=&quot;Берзарина ул&quot; 
-                 Дом=&quot;16&quot; 
-                 Кварт=&quot;офис 11&quot;/&gt;
-        &lt;/Адрес&gt;
-      &lt;/ГрузПолуч&gt;
-      &lt;ДокПодтвОтгрНом РеквНаимДок=&quot;Счет-фактура и документ об отгрузке товаров (выполнении работ), передаче имущественных прав (документ об оказании услуг)&quot; 
-                      РеквНомерДок=&quot;236285&quot; 
-                      РеквДатаДок=&quot;18.08.2025&quot;/&gt; &lt;!-- Подтверждающие документы --&gt;
-      &lt;СвПокуп&gt; &lt;!-- Сведения о покупателе --&gt;
-        &lt;ИдСв&gt;
-          &lt;СвЮЛУч НаимОрг=&quot;ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &amp;quot;КАЛАЧ&amp;quot;&quot; 
-                 ИННЮЛ=&quot;7734381384&quot; 
-                 КПП=&quot;773401001&quot;/&gt;
-        &lt;/ИдСв&gt;
-        &lt;Адрес ГЛНМеста=&quot;9864399200936&quot;&gt;
-          &lt;АдрРФ Индекс=&quot;123298&quot; 
-                 КодРегион=&quot;77&quot; 
-                 НаимРегион=&quot;Москва&quot; 
-                 Город=&quot;г Москва&quot; 
-                 Улица=&quot;ул Берзарина&quot; 
-                 Дом=&quot;16&quot;/&gt;
-        &lt;/Адрес&gt;
-        &lt;Контакт&gt;
-          &lt;Тлф&gt;8-929-966-76-00&lt;/Тлф&gt;
-          &lt;ЭлПочта&gt;kalach-mb@mail.ru&lt;/ЭлПочта&gt;
-        &lt;/Контакт&gt;
-      &lt;/СвПокуп&gt;
-      &lt;ДенИзм КодОКВ=&quot;643&quot; НаимОКВ=&quot;Российский рубль&quot;/&gt; &lt;!-- Валюта --&gt;
-      &lt;ИнфПолФХЖ1&gt; &lt;!-- Дополнительная информация --&gt;
-        &lt;ТекстИнф Идентиф=&quot;отправитель&quot; Значен=&quot;4603243999993&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;получатель&quot; Значен=&quot;9864399200936&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;номер_накладной&quot; Значен=&quot;236285&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;дата_накладной&quot; Значен=&quot;18.08.2025&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;грузополучатель&quot; Значен=&quot;9864399200936&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;грузоотправитель&quot; Значен=&quot;4603243999993&quot;/&gt;
-      &lt;/ИнфПолФХЖ1&gt;
-    &lt;/СвСчФакт&gt;
-    &lt;ТаблСчФакт&gt; &lt;!-- Табличная часть счета-фактуры --&gt;
-      &lt;СведТов НомСтр=&quot;1&quot; 
-               НаимТов=&quot;БАТОНЧИК СОЛОДОВЫЙ (СУХАРНЫЙ) 0,2 КГ Б/УП.&quot; 
-               ОКЕИ_Тов=&quot;796&quot; 
-               НаимЕдИзм=&quot;шт&quot; 
-               КолТов=&quot;6492.00000000000&quot; 
-               ЦенаТов=&quot;12.70000000000&quot; 
-               СтТовБезНДС=&quot;82448.40&quot; 
-               НалСт=&quot;10%&quot; 
-               СтТовУчНал=&quot;90693.24&quot;&gt; &lt;!-- Сведения о товаре --&gt;
-        &lt;Акциз&gt;
-          &lt;БезАкциз&gt;без акциза&lt;/БезАкциз&gt;
-        &lt;/Акциз&gt;
-        &lt;СумНал&gt;
-          &lt;СумНал&gt;8244.84&lt;/СумНал&gt;
-        &lt;/СумНал&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;номер_уведомления_об_отгрузке&quot; Значен=&quot;236285&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;дата_уведомления_об_отгрузке&quot; Значен=&quot;18.08.2025&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;артикул_поставщика&quot; Значен=&quot;1354&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;номер_накладной&quot; Значен=&quot;236285&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;дата_накладной&quot; Значен=&quot;18.08.2025&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;окончание_срока_годности&quot; Значен=&quot;19.08.2025&quot;/&gt;
-      &lt;/СведТов&gt;
-      &lt;ВсегоОпл СтТовБезНДСВсего=&quot;82448.40&quot; СтТовУчНалВсего=&quot;90693.24&quot;&gt; &lt;!-- Итоговые суммы --&gt;
-        &lt;СумНалВсего&gt;
-          &lt;СумНал&gt;8244.84&lt;/СумНал&gt;
-        &lt;/СумНалВсего&gt;
-      &lt;/ВсегоОпл&gt;
-    &lt;/ТаблСчФакт&gt;
-    &lt;СвПродПер&gt; &lt;!-- Сведения о передаче товара --&gt;
-      &lt;СвПер СодОпер=&quot;Товары переданы&quot; ДатаПер=&quot;18.08.2025&quot;&gt;
-        &lt;ОснПер РеквНаимДок=&quot;Договор&quot; РеквНомерДок=&quot;28084&quot; РеквДатаДок=&quot;20.03.2024&quot;/&gt;
-        &lt;СвЛицПер&gt;
-          &lt;РабОргПрод Должность=&quot;Генеральный директор&quot;&gt;
-            &lt;ФИО Фамилия=&quot;НАРЦИССОВА&quot; Имя=&quot;ТАТЬЯНА&quot; Отчество=&quot;ВЛАДИМИРОВНА&quot;/&gt;
-          &lt;/РабОргПрод&gt;
-        &lt;/СвЛицПер&gt;
-        &lt;Тран /&gt; &lt;!-- Транспортные данные --&gt;
-      &lt;/СвПер&gt;
-    &lt;/СвПродПер&gt;
-    &lt;Подписант Должн=&quot;Генеральный директор&quot; 
-               ТипПодпис=&quot;1&quot; 
-               ДатаПодДок=&quot;18.08.2025&quot; 
-               СпосПодтПолном=&quot;6&quot;&gt; &lt;!-- Сведения о подписавшем --&gt;
-      &lt;ФИО Фамилия=&quot;НАРЦИССОВА&quot; Имя=&quot;ТАТЬЯНА&quot; Отчество=&quot;ВЛАДИМИРОВНА&quot;/&gt;
-    &lt;/Подписант&gt;
-  &lt;/Документ&gt;
-&lt;/Файл&gt;
-</code></pre>
-<h2 id="exite-on_nkorschfdoppr">Exite ON_NKORSCHFDOPPR</h2>
-<p>s:\Base\Fabius\Edi\Exite\UKd</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;windows-1251&quot;?&gt; &lt;!-- Кодировка документа --&gt;
-&lt;Файл ИдФайл=&quot;ON_NKORSCHFDOPPR_2LD8A1A5B50-28FB-49CD-A074-6C1CB631A279_2LD5C4CBB98-DE2F-4FF6-BFC4-896D49D7AFF1_20250722_D185D517-A991-4D7D-8B40-4796ADB76B61&quot;
-     ВерсПрог=&quot;Фабиус&quot;
-     ВерсФорм=&quot;5.01&quot;&gt; &lt;!-- Реквизиты файла --&gt;
-
-  &lt;СвУчДокОбор ИдОтпр=&quot;2LD5C4CBB98-DE2F-4FF6-BFC4-896D49D7AFF1&quot;
-               ИдПол=&quot;2LD8A1A5B50-28FB-49CD-A074-6C1CB631A279&quot;&gt; &lt;!-- Участники документооборота --&gt;
-    &lt;СвОЭДОтпр НаимОрг=&quot;ООО &amp;quot;Электронные коммуникации&amp;quot;&quot;
-              ИННЮЛ=&quot;9715218298&quot;
-              ИдЭДО=&quot;2LD&quot;/&gt; &lt;!-- Данные оператора ЭДО --&gt;
-  &lt;/СвУчДокОбор&gt;
-
-  &lt;Документ КНД=&quot;1115133&quot;
-            Функция=&quot;КСЧФДИС&quot;
-            ПоФактХЖ=&quot;Документ, подтверждающий согласие (факт уведомления) покупателя на изменение стоимости отгруженных товаров (выполненных работ, оказанных услуг), переданных имущественных прав&quot;
-            НаимДокОпр=&quot;Корректировочный счет-фактура и документ об изменении стоимости отгруженных товаров (выполненных работ, оказанных услуг), переданных имущественных прав&quot;
-            ДатаИнфПр=&quot;23.07.2025&quot;
-            ВремИнфПр=&quot;10.47.18&quot;
-            НаимЭконСубСост=&quot;ООО &amp;quot;Калининградхлеб&amp;quot;&quot;
-            ОснДоверОргСост=&quot;Основание доверенности&quot;&gt; &lt;!-- Основные реквизиты документа --&gt;
-
-    &lt;СвКСчФ НомерКСчФ=&quot;206639-к&quot;
-           ДатаКСчФ=&quot;22.07.2025&quot;
-           КодОКВ=&quot;643&quot;&gt; &lt;!-- Сведения о корректировочном счете-фактуре --&gt;
-      &lt;СчФ НомерСчФ=&quot;206639&quot;
-           ДатаСчФ=&quot;22.07.2025&quot;/&gt; &lt;!-- Реквизиты исходного счета-фактуры --&gt;
-
-      &lt;СвПрод&gt; &lt;!-- Сведения о продавце --&gt;
-        &lt;ИдСв&gt;
-          &lt;СвЮЛУч НаимОрг=&quot;ООО &amp;quot;Калининградхлеб&amp;quot;&quot;
-                 ИННЮЛ=&quot;5018167458&quot;
-                 КПП=&quot;501801001&quot;/&gt;
-        &lt;/ИдСв&gt;
-        &lt;Адрес&gt;
-          &lt;АдрРФ Индекс=&quot;141080&quot;
-                 КодРегион=&quot;50&quot;
-                 Район=&quot;Московская обл&quot;
-                 Город=&quot;Королев г&quot;
-                 Улица=&quot;Калининградская ул&quot;
-                 Дом=&quot;7&quot;/&gt;
-        &lt;/Адрес&gt;
-      &lt;/СвПрод&gt;
-
-      &lt;СвПокуп&gt; &lt;!-- Сведения о покупателе --&gt;
-        &lt;ИдСв&gt;
-          &lt;СвЮЛУч НаимОрг=&quot;АО &amp;quot;ТАНДЕР&amp;quot;&quot;
-                 ИННЮЛ=&quot;2310031475&quot;
-                 КПП=&quot;231001001&quot;/&gt;
-        &lt;/ИдСв&gt;
-        &lt;Адрес&gt;
-          &lt;АдрРФ Индекс=&quot;350002&quot;
-                 КодРегион=&quot;23&quot;
-                 Город=&quot;Краснодар г&quot;
-                 Улица=&quot;Леваневского ул&quot;
-                 Дом=&quot;185&quot;/&gt;
-        &lt;/Адрес&gt;
-      &lt;/СвПокуп&gt;
-
-      &lt;ДопСвФХЖ1 НаимОКВ=&quot;Российский рубль&quot;/&gt; &lt;!-- Валюта --&gt;
-
-      &lt;ИнфПолФХЖ1&gt; &lt;!-- Дополнительная информация --&gt;
-        &lt;ТекстИнф Идентиф=&quot;отправитель&quot; Значен=&quot;4603243999993&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;грузополучатель&quot; Значен=&quot;4680328485213&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;номер_заказа&quot; Значен=&quot;501070P24265&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;дата_заказа&quot; Значен=&quot;21.07.2025&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;номер_накладной&quot; Значен=&quot;1220750637&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;дата_накладной&quot; Значен=&quot;22.07.2025&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;дата_поставки&quot; Значен=&quot;22.07.2025&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;получатель&quot; Значен=&quot;4607164999995&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;грузоотправитель&quot; Значен=&quot;4603243999993&quot;/&gt;
-        &lt;ТекстИнф Идентиф=&quot;номер_акта&quot; Значен=&quot;952904104&quot;/&gt;
-      &lt;/ИнфПолФХЖ1&gt;
-    &lt;/СвКСчФ&gt;
-
-    &lt;ТаблКСчФ&gt; &lt;!-- Табличная часть корректировки --&gt;
-      &lt;СведТов НомСтр=&quot;1&quot;
-               НаимТов=&quot;КЕКС С ИЗЮМОМ 0.35 УП.&quot;
-               ОКЕИ_ТовДо=&quot;796&quot;
-               ОКЕИ_ТовПосле=&quot;796&quot;
-               КолТовДо=&quot;1.000&quot;
-               КолТовПосле=&quot;0.000&quot;
-               ЦенаТовДо=&quot;112.00&quot;
-               ЦенаТовПосле=&quot;0.00&quot;
-               НалСтДо=&quot;20%&quot;
-               НалСтПосле=&quot;20%&quot;&gt; &lt;!-- Сведения о товаре --&gt;
-        &lt;СтТовБезНДС СтоимДоИзм=&quot;112.00&quot;
-                     СтоимПослеИзм=&quot;0.00&quot;
-                     СтоимУм=&quot;112.00&quot;/&gt; &lt;!-- Стоимость без НДС --&gt;
-        &lt;АкцизДо&gt;
-          &lt;БезАкциз&gt;без акциза&lt;/БезАкциз&gt;
-        &lt;/АкцизДо&gt;
-        &lt;АкцизПосле&gt;
-          &lt;БезАкциз&gt;без акциза&lt;/БезАкциз&gt;
-        &lt;/АкцизПосле&gt;
-        &lt;СумНалДо&gt;
-          &lt;СумНДС&gt;22.40&lt;/СумНДС&gt;
-        &lt;/СумНалДо&gt;
-        &lt;СумНалПосле&gt;
-          &lt;СумНДС&gt;0.00&lt;/СумНДС&gt;
-        &lt;/СумНалПосле&gt;
-        &lt;СумНалРазн&gt;
-          &lt;СумУм&gt;22.40&lt;/СумУм&gt;
-        &lt;/СумНалРазн&gt;
-        &lt;СтТовУчНал СтоимДоИзм=&quot;134.40&quot;
-                   СтоимПослеИзм=&quot;0.00&quot;
-                   СтоимУм=&quot;134.40&quot;/&gt; &lt;!-- Стоимость с НДС --&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;номер_заказа&quot; Значен=&quot;501070P24265&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;код_материала&quot; Значен=&quot;8000026186&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;номер_уведомления_об_отгрузке&quot; Значен=&quot;1220750637&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;штрихкод&quot; Значен=&quot;4603243011176&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;артикул_поставщика&quot; Значен=&quot;1235&quot;/&gt;
-        &lt;ИнфПолФХЖ2 Идентиф=&quot;номер_накладной&quot; Значен=&quot;1220750637&quot;/&gt;
-        &lt;ДопСведТов НаимЕдИзмДо=&quot;шт&quot;
-                   НаимЕдИзмПосле=&quot;шт&quot;/&gt; &lt;!-- Единицы измерения --&gt;
-      &lt;/СведТов&gt;
-
-      &lt;ВсегоУм СтТовБезНДСВсего=&quot;112.00&quot;
-               СтТовУчНалВсего=&quot;134.40&quot;&gt; &lt;!-- Итоговые суммы --&gt;
-        &lt;СумНал&gt;
-          &lt;СумНДС&gt;22.40&lt;/СумНДС&gt;
-        &lt;/СумНал&gt;
-      &lt;/ВсегоУм&gt;
-    &lt;/ТаблКСчФ&gt;
-
-    &lt;СодФХЖ3 СодОпер=&quot;Изменение стоимости товаров и услуг&quot;&gt; &lt;!-- Содержание операции --&gt;
-      &lt;ПередатДокум НаимОсн=&quot;Акт&quot;
-                   НомОсн=&quot;650&quot;
-                   ДатаОсн=&quot;22.07.2025&quot;/&gt;
-      &lt;ДокумОснКор НаимОсн=&quot;Без документа-основания&quot;/&gt;
-    &lt;/СодФХЖ3&gt;
-
-    &lt;Подписант ОблПолн=&quot;6&quot;
-              Статус=&quot;1&quot;
-              ОснПолн=&quot;Должностные обязанности&quot;&gt; &lt;!-- Сведения о подписавшем --&gt;
-      &lt;ЮЛ ИННЮЛ=&quot;5018167458&quot;
-         НаимОрг=&quot;ООО &amp;quot;Калининградхлеб&amp;quot;&quot;
-         Должн=&quot;Генеральный директор&quot;&gt;
-        &lt;ФИО Фамилия=&quot;НАРЦИССОВА&quot;
-             Имя=&quot;ТАТЬЯНА&quot;
-             Отчество=&quot;ВЛАДИМИРОВНА&quot;/&gt;
-      &lt;/ЮЛ&gt;
-    &lt;/Подписант&gt;
-  &lt;/Документ&gt;
-&lt;/Файл&gt;
-</code></pre>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Путь</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORDERS</td>
+<td>s:\Base\Fabius\Edi\Exite\Orders</td>
+</tr>
+<tr>
+<td>ORDRSP</td>
+<td>s:\Base\Fabius\Edi\Exite\Ordrsp</td>
+</tr>
+<tr>
+<td>DESADV</td>
+<td>s:\Base\Fabius\Edi\Exite\Desadv</td>
+</tr>
+<tr>
+<td>RECADV</td>
+<td>s:\Base\Fabius\Edi\Exite\Recadv</td>
+</tr>
+<tr>
+<td>ON_NSCHFDOPPR</td>
+<td>s:\Base\Fabius\Edi\Exite\Upd</td>
+</tr>
+<tr>
+<td>ON_NKORSCHFDOPPR</td>
+<td>s:\Base\Fabius\Edi\Exite\UKd</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../dtv/dtv/" class="btn btn-neutral float-left" title="dtv"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../ghc/ghc/" class="btn btn-neutral float-left" title="ghc"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../../orl/orl/" class="btn btn-neutral float-right" title="orl">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -577,7 +178,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../dtv/dtv/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../ghc/ghc/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../../orl/orl/" style="color: #fcfcfc">Next &raquo;</a></span>

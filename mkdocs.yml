@@ -2,10 +2,15 @@ site_name: Мои дела
 theme:
   name: readthedocs
 nav:
-  - Home: index.md
-  - Четвёртое ТО: folder/folder.md
+  - Контур: Контур/Контур.md
+  - Exite: Exite/Exite.md
   - arx: arx/arx.md
   - dtv: dtv/dtv.md
+  - ehc: ehc/ehc.md
+  - ghc: ghc/ghc.md
   - krl: krl/krl.md
   - orl: orl/orl.md
   - srg: srg/srg.md
+  - Home: index.md
+  - Четвёртое ТО: folder/folder.md
+
