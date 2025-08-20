@@ -40,11 +40,11 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/">Контур</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
+                <li class="toctree-l1"><a class="reference internal" href="../../Exite/Exite/">Exite</a>
                 </li>
               </ul>
               <ul>
@@ -53,6 +53,14 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../../dtv/dtv/">dtv</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ehc/ehc/">ehc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ghc/ghc/">ghc</a>
                 </li>
               </ul>
               <ul>
@@ -71,6 +79,14 @@
     <li class="toctree-l2"><a class="reference internal" href="#ordrsp">Корус ORDRSP</a>
     </li>
     </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
                 </li>
               </ul>
       </div>
@@ -105,136 +121,14 @@
 <p>y:\Fabius\Edi_Korus\IN\ORDERS</p>
 <p>3124019258_ORDERS_4607816029995_P.xml</p>
 <p><a href="https://wiki.sftserv.ru/index.php/ORDERS">wiki.sftserv.ru/index.php/ORDERS</a> описание всех тегов по-русски</p>
-<pre><code class="language-xml">&lt;Document-Order&gt;
-   &lt;Order-Header&gt;
-      &lt;OrderNumber&gt;7605373549&lt;/OrderNumber&gt;
-      &lt;OrderDate&gt;2025-08-14&lt;/OrderDate&gt;
-      &lt;ExpectedDeliveryDate&gt;2025-08-15&lt;/ExpectedDeliveryDate&gt;
-      &lt;ContractNumber&gt;9999999999&lt;/ContractNumber&gt;
-      &lt;CorrectionNumber&gt;1&lt;/CorrectionNumber&gt;
-      &lt;Currency&gt;RUB&lt;/Currency&gt;
-      &lt;DocumentFunctionCode&gt;O&lt;/DocumentFunctionCode&gt;
-      &lt;GeneralInformation/&gt;
-   &lt;/Order-Header&gt;
-   &lt;Order-Parties&gt;
-      &lt;Buyer&gt;
-         &lt;ILN&gt;4606038001260&lt;/ILN&gt;
-         &lt;Name&gt;ООО &quot;АГРОТОРГ&quot;&lt;/Name&gt;
-      &lt;/Buyer&gt;
-      &lt;Seller&gt;
-         &lt;ILN&gt;4607816029995&lt;/ILN&gt;
-         &lt;CodeByBuyer&gt;7000068753&lt;/CodeByBuyer&gt;
-      &lt;/Seller&gt;
-      &lt;DeliveryPoint&gt;
-         &lt;ILN&gt;4606038419300&lt;/ILN&gt;
-      &lt;/DeliveryPoint&gt;
-   &lt;/Order-Parties&gt;
-   &lt;Order-Lines&gt;
-      &lt;Line&gt;
-         &lt;Line-Item&gt;
-            &lt;LineNumber&gt;1&lt;/LineNumber&gt;
-            &lt;EAN&gt;4607816020442&lt;/EAN&gt;
-            &lt;BuyerItemCode&gt;4386567&lt;/BuyerItemCode&gt;
-            &lt;SupplierItemCode&gt;1542&lt;/SupplierItemCode&gt;
-            &lt;ItemDescription&gt;СУРГУТ.ХЗ Тесто ДЛЯ ПИЦЦЫ дрож.охл.500г&lt;/ItemDescription&gt;
-            &lt;OrderedQuantity&gt;10&lt;/OrderedQuantity&gt;
-            &lt;OrderedUnitPacksize&gt;1.000&lt;/OrderedUnitPacksize&gt;
-            &lt;UnitOfMeasure&gt;PCE&lt;/UnitOfMeasure&gt;
-            &lt;OrderedUnitNetPrice&gt;43.68&lt;/OrderedUnitNetPrice&gt;
-            &lt;OrderedUnitGrossPrice&gt;48.05&lt;/OrderedUnitGrossPrice&gt;
-            &lt;GrossAmount&gt;480.48&lt;/GrossAmount&gt;
-            &lt;TaxRate&gt;10.0&lt;/TaxRate&gt;
-         &lt;/Line-Item&gt;
-      &lt;/Line&gt;
-   &lt;/Order-Lines&gt;
-   &lt;Order-Summary&gt;
-      &lt;TotalLines&gt;1&lt;/TotalLines&gt;
-      &lt;TotalOrderedAmount&gt;10&lt;/TotalOrderedAmount&gt;
-      &lt;TotalGrossAmount&gt;480.48&lt;/TotalGrossAmount&gt;
-   &lt;/Order-Summary&gt;
-&lt;/Document-Order&gt;
-</code></pre>
 <h2 id="ordrsp">Корус ORDRSP</h2>
 <p>y:\Fabius\Edi_Korus\Out\ORDRSP</p>
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;WINDOWS-1251&quot;?&gt;
-    &lt;Document-OrderResponse&gt;
-        &lt;OrderResponse-Header&gt;
-            &lt;OrderResponseNumber&gt;10929&lt;/OrderResponseNumber&gt;
-            &lt;OrderResponseDate&gt;2025-08-20&lt;/OrderResponseDate&gt;
-            &lt;ExpectedDeliveryDate&gt;2025-08-20&lt;/ExpectedDeliveryDate&gt;
-            &lt;ExpectedDeliveryTime&gt;12:40&lt;/ExpectedDeliveryTime&gt;
-            &lt;OrderNumber /&gt;
-            &lt;OrderDate&gt;2025-08-20&lt;/OrderDate&gt;
-            &lt;ResponseType&gt;29&lt;/ResponseType&gt;
-        &lt;/OrderResponse-Header&gt;
-        &lt;OrderResponse-Parties&gt;
-            &lt;Buyer&gt;
-                &lt;ILN /&gt;
-            &lt;/Buyer&gt;
-            &lt;Seller&gt;
-                &lt;ILN&gt;4607816029995&lt;/ILN&gt;
-            &lt;/Seller&gt;
-            &lt;DeliveryPoint&gt;
-                &lt;ILN /&gt;
-            &lt;/DeliveryPoint&gt;
-        &lt;/OrderResponse-Parties&gt;
-        &lt;OrderResponse-Lines&gt;
-            &lt;Line&gt;
-                &lt;Line-Item&gt;
-                    &lt;LineNumber&gt;1&lt;/LineNumber&gt;
-                    &lt;EAN /&gt;
-                    &lt;LineItemStatus&gt;5&lt;/LineItemStatus&gt;
-                    &lt;BuyerItemCode&gt;1520&lt;/BuyerItemCode&gt;
-                    &lt;SupplierItemCode&gt;1520&lt;/SupplierItemCode&gt;
-                    &lt;ItemDescription&gt;Хлеб пшен.из муки высшего сорта форм.(0,5)&lt;/ItemDescription&gt;
-                    &lt;OrderedQuantity&gt;21.000&lt;/OrderedQuantity&gt;
-                    &lt;QuantityToBeDelivered&gt;21.000&lt;/QuantityToBeDelivered&gt;
-                    &lt;UnitPacksizeToBeDelivered&gt;16.000&lt;/UnitPacksizeToBeDelivered&gt;
-                    &lt;UnitOfMeasure&gt;PCE&lt;/UnitOfMeasure&gt;
-                    &lt;Currency&gt;RUB&lt;/Currency&gt;
-                    &lt;OrderedUnitNetPrice&gt;45.18&lt;/OrderedUnitNetPrice&gt;
-                    &lt;OrderedUnitGrossPrice&gt;49.70&lt;/OrderedUnitGrossPrice&gt;
-                    &lt;TaxRate&gt;10&lt;/TaxRate&gt;
-                    &lt;NetAmount&gt;948.82&lt;/NetAmount&gt;
-                    &lt;GrossAmount&gt;1043.70&lt;/GrossAmount&gt;
-                    &lt;TaxAmount&gt;94.88&lt;/TaxAmount&gt;
-                &lt;/Line-Item&gt;
-            &lt;/Line&gt;
-            &lt;Line&gt;
-                &lt;Line-Item&gt;
-                    &lt;LineNumber&gt;2&lt;/LineNumber&gt;
-                    &lt;EAN /&gt;
-                    &lt;LineItemStatus&gt;5&lt;/LineItemStatus&gt;
-                    &lt;BuyerItemCode&gt;42&lt;/BuyerItemCode&gt;
-                    &lt;SupplierItemCode&gt;42&lt;/SupplierItemCode&gt;
-                    &lt;ItemDescription&gt;Хлеб &quot;Прибрежный&quot; (0,3)&lt;/ItemDescription&gt;
-                    &lt;OrderedQuantity&gt;17.000&lt;/OrderedQuantity&gt;
-                    &lt;QuantityToBeDelivered&gt;17.000&lt;/QuantityToBeDelivered&gt;
-                    &lt;UnitPacksizeToBeDelivered&gt;24.000&lt;/UnitPacksizeToBeDelivered&gt;
-                    &lt;UnitOfMeasure&gt;PCE&lt;/UnitOfMeasure&gt;
-                    &lt;Currency&gt;RUB&lt;/Currency&gt;
-                    &lt;OrderedUnitNetPrice&gt;36.59&lt;/OrderedUnitNetPrice&gt;
-                    &lt;OrderedUnitGrossPrice&gt;40.25&lt;/OrderedUnitGrossPrice&gt;
-                    &lt;TaxRate&gt;10&lt;/TaxRate&gt;
-                    &lt;NetAmount&gt;622.05&lt;/NetAmount&gt;
-                    &lt;GrossAmount&gt;684.25&lt;/GrossAmount&gt;
-                    &lt;TaxAmount&gt;62.20&lt;/TaxAmount&gt;
-                &lt;/Line-Item&gt;
-            &lt;/Line&gt;
-        &lt;/OrderResponse-Lines&gt;
-        &lt;OrderResponse-Summary&gt;
-            &lt;TotalLines&gt;2&lt;/TotalLines&gt;
-            &lt;TotalNetAmount&gt;1570.87&lt;/TotalNetAmount&gt;
-            &lt;TotalGrossAmount&gt;1727.95&lt;/TotalGrossAmount&gt;
-            &lt;TotalTaxAmount&gt;157.08&lt;/TotalTaxAmount&gt;
-        &lt;/OrderResponse-Summary&gt;
-    &lt;/Document-OrderResponse&gt;
-</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../../orl/orl/" class="btn btn-neutral float-left" title="orl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../.." class="btn btn-neutral float-right" title="Home">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -259,6 +153,8 @@
     
       <span><a href="../../orl/orl/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../.." style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>orl - Мои дела</title>
+    <title>ghc - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "orl";
-        var mkdocs_page_input_path = "orl\\orl.md";
+        var mkdocs_page_name = "ghc";
+        var mkdocs_page_input_path = "ghc\\ghc.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -59,24 +59,18 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../ehc/ehc/">ehc</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../ghc/ghc/">ghc</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">ghc</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../../krl/krl/">krl</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">orl</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#zak-prim">Документ ZAK - PRIM Примечание</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../orl/orl/">orl</a>
                 </li>
               </ul>
               <ul>
@@ -105,7 +99,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">orl</li>
+      <li class="breadcrumb-item active">ghc</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -114,38 +108,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="orlmd">orl.md</h1>
-<p>Диспетчерская (все заказы) - Обмен данными (прием заказов из XML) - Прием заказов EDI</p>
-<pre><code class="language-php">if !Import_Edi_r641('Orders')
-  DoImpExp('10',,,105)
-endif
-</code></pre>
-<h2 id="zak-prim">Документ ZAK - PRIM Примечание</h2>
-<p>R260 (105) 19.08.2025 14:11:26</p>
-<p>\\hk-srv\export\Korus\ORDERS_c7712208-60c6-b2b5-bb9b-fb262c37b782.xml</p>
-<h2 id="r260">R260 Импорт/экспорт файлов</h2>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Наименование настройки</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>105</td>
-<td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
-</tr>
-</tbody>
-</table>
-<h2 id="orders">Корус ORDERS</h2>
-<p>z:\Korus</p>
+                <h1 id="ghcmd">ghc.md</h1>
+<p>R260 (377) Kontur 19.08.2025 8:29:10 </p>
+<p>\\server2\data\fabius\EDI\Inbox\ORDERS_cd311bf6-7cbc-11f0-a444-0142d576d625.xml</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../krl/krl/" class="btn btn-neutral float-left" title="krl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../srg/srg/" class="btn btn-neutral float-right" title="srg">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../ehc/ehc/" class="btn btn-neutral float-left" title="ehc"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../krl/krl/" class="btn btn-neutral float-right" title="krl">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -168,10 +139,10 @@ endif
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../krl/krl/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../ehc/ehc/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../srg/srg/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../krl/krl/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
