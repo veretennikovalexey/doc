@@ -5,6 +5,7 @@ nav:
   - Home: index.md
   - Четвёртое ТО: folder/folder.md
   - arx: arx/arx.md
+  - dtv: dtv/dtv.md
   - krl: krl/krl.md
   - orl: orl/orl.md
   - srg: srg/srg.md
