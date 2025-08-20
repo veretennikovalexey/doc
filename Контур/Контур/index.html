@@ -50,8 +50,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#recadv">RECADV</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#invdop">INVDOP</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -406,105 +404,6 @@
     &lt;/lineItems&gt;
   &lt;/receivingAdvice&gt;
 &lt;/eDIMessage&gt;
-</code></pre>
-<h2 id="invdop">INVDOP</h2>
-<pre><code class="language-xml">&lt;Document-Invoice&gt;
-    &lt;Invoice-Header&gt;
-        &lt;InvoiceNumber&gt;15&lt;/InvoiceNumber&gt;
-        &lt;InvoiceDate&gt;2025-02-10&lt;/InvoiceDate&gt;
-        &lt;InvoiceCurrency&gt;RUB&lt;/InvoiceCurrency&gt;
-        &lt;DocumentFunctionCode&gt;O&lt;/DocumentFunctionCode&gt;
-        &lt;MessageType&gt;INVDOP&lt;/MessageType&gt;
-        &lt;Documents&gt;
-            &lt;DocumentDescription&gt;Отгрузка товаров&lt;/DocumentDescription&gt;
-            &lt;Document&gt;
-                &lt;DocumentNumber&gt;15&lt;/DocumentNumber&gt;
-                &lt;DocumentDate&gt;2025-02-10&lt;/DocumentDate&gt;
-                &lt;DocumentName&gt;Накладная&lt;/DocumentName&gt;
-            &lt;/Document&gt;
-        &lt;/Documents&gt;
-        &lt;Order&gt;
-            &lt;BuyerOrderNumber&gt;728900P24680&lt;/BuyerOrderNumber&gt;
-            &lt;BuyerOrderDate&gt;2025-02-09&lt;/BuyerOrderDate&gt;
-        &lt;/Order&gt;
-        &lt;Delivery&gt;
-            &lt;DeliveryNoteNumber&gt;15&lt;/DeliveryNoteNumber&gt;
-            &lt;DeliveryNoteDate&gt;2025-02-10&lt;/DeliveryNoteDate&gt;
-            &lt;DeliveryDate&gt;2025-02-10&lt;/DeliveryDate&gt;
-            &lt;ActualDeliveryDate&gt;2025-02-10&lt;/ActualDeliveryDate&gt;
-            &lt;ReceivingAdviceNumber&gt;&lt;/ReceivingAdviceNumber&gt;
-            &lt;ReceivingAdviceDate&gt;&lt;/ReceivingAdviceDate&gt;
-        &lt;/Delivery&gt;
-    &lt;/Invoice-Header&gt;
-    &lt;Invoice-Parties&gt;
-        &lt;Buyer&gt;
-            &lt;ILN&gt;4607164001234&lt;/ILN&gt;
-        &lt;/Buyer&gt;
-        &lt;Seller&gt;
-            &lt;ILN&gt;4620000000456&lt;/ILN&gt;
-            &lt;TaxID&gt;3215007890&lt;/TaxID&gt;
-            &lt;UtilizationRegisterNumber&gt;325701002&lt;/UtilizationRegisterNumber&gt;
-            &lt;CodeByBuyer&gt;&lt;/CodeByBuyer&gt;
-            &lt;Name&gt;ООО &quot;ОРЛОВСКИЙ ХЛЕБОЗАВОД&quot;&lt;/Name&gt;
-            &lt;ManagingPerson&gt;Иван Сидоров&lt;/ManagingPerson&gt;
-            &lt;ManagingPersonFather&gt;Петрович&lt;/ManagingPersonFather&gt;
-            &lt;ContactFunction&gt;Директор&lt;/ContactFunction&gt;
-            &lt;InsuranceContact&gt;7&lt;/InsuranceContact&gt;
-            &lt;SupplierContact&gt;2&lt;/SupplierContact&gt;
-            &lt;AuthorityContact&gt;Полномочия&lt;/AuthorityContact&gt;
-            &lt;StreetAndNumber&gt;Ленина ул, 12&lt;/StreetAndNumber&gt;
-            &lt;CityName&gt;Орёл&lt;/CityName&gt;
-            &lt;ProvinceCode&gt;57&lt;/ProvinceCode&gt;
-            &lt;PostalCode&gt;302020&lt;/PostalCode&gt;
-            &lt;Country&gt;RU&lt;/Country&gt;
-        &lt;/Seller&gt;
-        &lt;DeliveryPoint&gt;
-            &lt;ILN&gt;4680328582001&lt;/ILN&gt;
-        &lt;/DeliveryPoint&gt;
-        &lt;Consignor&gt;
-            &lt;ILN&gt;4620000000456&lt;/ILN&gt;
-        &lt;/Consignor&gt;
-    &lt;/Invoice-Parties&gt;
-    &lt;Invoice-Lines&gt;
-        &lt;Line&gt;
-            &lt;Line-Item&gt;
-                &lt;LineNumber&gt;1&lt;/LineNumber&gt;
-                &lt;OrderLineNumber&gt;3&lt;/OrderLineNumber&gt;
-                &lt;LineItemInformation&gt;1&lt;/LineItemInformation&gt;
-                &lt;EAN&gt;4601234567890&lt;/EAN&gt;
-                &lt;BuyerItemCode&gt;&lt;/BuyerItemCode&gt;
-                &lt;SupplierItemCode&gt;102&lt;/SupplierItemCode&gt;
-                &lt;ItemDescription&gt;&lt;![CDATA[Булка &quot;Орловская&quot; с кунжутом]]&gt;&lt;/ItemDescription&gt;
-                &lt;InvoiceQuantity&gt;5.000&lt;/InvoiceQuantity&gt;
-                &lt;UnitOfMeasure&gt;PCE&lt;/UnitOfMeasure&gt;
-                &lt;InvoiceUnitNetPrice&gt;15.50&lt;/InvoiceUnitNetPrice&gt;
-                &lt;OrderedUnitPacksize&gt;1&lt;/OrderedUnitPacksize&gt;
-                &lt;CountryOfOriginCode&gt;RU&lt;/CountryOfOriginCode&gt;
-                &lt;TaxRate&gt;10.00&lt;/TaxRate&gt;
-                &lt;TaxAmount&gt;7.75&lt;/TaxAmount&gt;
-                &lt;NetAmount&gt;77.50&lt;/NetAmount&gt;
-                &lt;GrossAmount&gt;85.25&lt;/GrossAmount&gt;
-            &lt;/Line-Item&gt;
-        &lt;/Line&gt;
-    &lt;/Invoice-Lines&gt;
-    &lt;Invoice-Summary&gt;
-        &lt;TotalLines&gt;1&lt;/TotalLines&gt;
-        &lt;TotalNetAmount&gt;77.50&lt;/TotalNetAmount&gt;
-        &lt;TotalTaxableBasis&gt;77.50&lt;/TotalTaxableBasis&gt;
-        &lt;TotalTaxAmount&gt;7.75&lt;/TotalTaxAmount&gt;
-        &lt;TotalGrossAmount&gt;85.25&lt;/TotalGrossAmount&gt;
-        &lt;Tax-Summary&gt;
-            &lt;Tax-Summary-Line&gt;
-                &lt;TaxRate&gt;10.00&lt;/TaxRate&gt;
-                &lt;TaxName&gt;НДС&lt;/TaxName&gt;
-                &lt;TaxAmount&gt;7.75&lt;/TaxAmount&gt;
-                &lt;TaxableBasis&gt;77.50&lt;/TaxableBasis&gt;
-                &lt;TaxableAmount&gt;77.50&lt;/TaxableAmount&gt;
-                &lt;GrossAmount&gt;85.25&lt;/GrossAmount&gt;
-            &lt;/Tax-Summary-Line&gt;
-        &lt;/Tax-Summary&gt;
-    &lt;/Invoice-Summary&gt;
-&lt;/Document-Invoice&gt;
 </code></pre>
               
             </div>
