@@ -3,7 +3,7 @@ theme:
   name: readthedocs
 nav:
   - Контур: Контур/Контур.md
-  - Корус: Корус/Корус.md
+  - 105 Корус: Корус/Корус.md
   - Exite: Exite/Exite.md
   - arx: arx/arx.md
   - dtv: dtv/dtv.md
@@ -12,6 +12,9 @@ nav:
   - krl: krl/krl.md
   - orl: orl/orl.md
   - srg: srg/srg.md
-  - Home: index.md
+  - whc: whc/whc.md
+  - zrs: zrs/zrs.md
+  - sftserv.ru/chronology/DISP/826.htm: index.md
   - Четвёртое ТО: folder/folder.md
 
+# shift alt дублировать строку
