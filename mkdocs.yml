@@ -2,9 +2,9 @@ site_name: Мои дела
 theme:
   name: readthedocs
 nav:
-  - Контур: Контур/Контур.md
+  - 192 Контур: Контур/Контур.md
   - 105 Корус: Корус/Корус.md
-  - Exite: Exite/Exite.md
+  - 152 Exite: Exite/Exite.md
   - arx: arx/arx.md
   - dtv: dtv/dtv.md
   - ehc: ehc/ehc.md
