@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>arx - Мои дела</title>
+    <title>whc - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "arx";
-        var mkdocs_page_input_path = "arx\\arx.md";
+        var mkdocs_page_name = "whc";
+        var mkdocs_page_input_path = "whc\\whc.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -51,12 +51,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../Exite/Exite/">Exite</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">arx</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#r641">R641</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../arx/arx/">arx</a>
                 </li>
               </ul>
               <ul>
@@ -83,8 +79,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../srg/srg/">srg</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../whc/whc/">whc</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">whc</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -113,7 +115,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">arx</li>
+      <li class="breadcrumb-item active">whc</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -122,49 +124,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="arxmd">arx.md</h1>
-<h2 id="r641">R641</h2>
-<p>Диспетчерская (все заказы) - Справочники - Настройки EDI обмена - Список EDI провайдеров</p>
+                <h1 id="whcmd">whc.md</h1>
+<p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
+<p>R260 (105) 19.08.2025</p>
+<h2 id="r260">R260 Импорт/экспорт файлов</h2>
 <table>
 <thead>
 <tr>
 <th>Код</th>
-<th>Наименование провайдера</th>
+<th>Наименование настройки</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Exite (E-COM, Docrobot)</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Edisoft (Ediweb.com)</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Leradata</td>
-</tr>
-<tr>
-<td>4</td>
-<td>CISLINK</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Корус (СберКорус, Корус Консалтинг, esphere-ECOD)</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Контур (Диадок)</td>
+<td>105</td>
+<td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
 </tr>
 </tbody>
 </table>
+<h2 id="orders">Корус ORDERS</h2>
+<p>C:\1_EDI</p>
+<p>У Вадима заказы расположены локально у оператора, т.е. на сервере файлов нет</p>
+<p>Диспетчерская (все заказы) - Обмен данными (прием заказов из XML) - Прием заказов EDI</p>
+<pre><code class="language-php">if !Import_Edi_r641('Orders')
+  DoImpExp('10',,,105)
+endif
+</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../Exite/Exite/" class="btn btn-neutral float-left" title="Exite"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../dtv/dtv/" class="btn btn-neutral float-right" title="dtv">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../srg/srg/" class="btn btn-neutral float-left" title="srg"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../zrs/zrs/" class="btn btn-neutral float-right" title="zrs">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -187,10 +178,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../Exite/Exite/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../srg/srg/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../dtv/dtv/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../zrs/zrs/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
