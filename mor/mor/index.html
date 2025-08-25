@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>whc - Мои дела</title>
+    <title>mor - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "whc";
-        var mkdocs_page_input_path = "whc\\whc.md";
+        var mkdocs_page_name = "mor";
+        var mkdocs_page_input_path = "mor\\mor.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -83,8 +83,12 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../mgn/mgn/">mgn</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../mor/mor/">mor</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">mor</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">Планировщик заданий</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -103,14 +107,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../vor/vor/">vor</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">whc</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../whc/whc/">whc</a>
                 </li>
               </ul>
               <ul>
@@ -143,7 +141,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">whc</li>
+      <li class="breadcrumb-item active">mor</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -152,38 +150,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="whcmd">whc.md</h1>
+                <h1 id="mormd">mor.md</h1>
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
-<p>R260 (105) 19.08.2025</p>
-<h2 id="r260">R260 Импорт/экспорт файлов</h2>
+<p>R260 (377) Kontur 24.08.2025 19:43:29</p>
+<p>\\bkkmorshan\data\Fabius\EDI\Kontur</p>
+<p>\Orders\ORDERS_0a446ca5-8106-11f0-84ee-d8cd988657a0.xml</p>
+<h2 id="_1">Планировщик заданий</h2>
+<p>я Администратор - Настройки - Планировщик заданий</p>
+<p>R215 План событий</p>
 <table>
 <thead>
 <tr>
 <th>Код</th>
-<th>Наименование настройки</th>
+<th>Событие</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>105</td>
-<td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
+<td>92</td>
+<td>Скачивание и обработка увед. о приемке EDI-RECADV. Универсальная схема по R641</td>
+</tr>
+<tr>
+<td>93</td>
+<td>Скачивание и обработка заказов EDI-Orders. Универсальная схема по R641</td>
 </tr>
 </tbody>
 </table>
-<h2 id="orders">Корус ORDERS</h2>
-<p>C:\1_EDI</p>
-<p>У Вадима заказы расположены локально у оператора, т.е. на сервере файлов нет</p>
-<p>Диспетчерская (все заказы) - Обмен данными (прием заказов из XML) - Прием заказов EDI</p>
-<pre><code class="language-php">if !Import_Edi_r641('Orders')
-  DoImpExp('10',,,105)
-endif
-</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../vor/vor/" class="btn btn-neutral float-left" title="vor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../zrs/zrs/" class="btn btn-neutral float-right" title="zrs">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../mgn/mgn/" class="btn btn-neutral float-left" title="mgn"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../orl/orl/" class="btn btn-neutral float-right" title="orl">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -206,10 +204,10 @@ endif
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../vor/vor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../mgn/mgn/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../zrs/zrs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../orl/orl/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
