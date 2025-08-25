@@ -12,7 +12,9 @@ endif
 
 R260 (105) 19.08.2025 14:11:26
 
-\\\hk-srv\export\Korus\ORDERS_c7712208-60c6-b2b5-bb9b-fb262c37b782.xml
+\\\hk-srv\export\Korus
+
+\ORDERS_c7712208-60c6-b2b5-bb9b-fb262c37b782.xml
 
 ## R260 Импорт/экспорт файлов
 
