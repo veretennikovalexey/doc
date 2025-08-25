@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>srg - Мои дела</title>
+    <title>ig2 - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "srg";
-        var mkdocs_page_input_path = "srg\\srg.md";
+        var mkdocs_page_name = "ig2";
+        var mkdocs_page_input_path = "ig2\\ig2.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -67,8 +67,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../ghc/ghc/">ghc</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../ig2/ig2/">ig2</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">ig2</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#exel_from_zak5-sg">EXEL_FROM_ZAK5 sg Сергей</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r525-e-mail-">R525 e-mail-ы по контрагентам</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -79,14 +85,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../orl/orl/">orl</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">srg</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#ordrsp">Корус ORDRSP</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../srg/srg/">srg</a>
                 </li>
               </ul>
               <ul>
@@ -127,7 +127,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">srg</li>
+      <li class="breadcrumb-item active">ig2</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -136,23 +136,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="srgmd">srg.md</h1>
-<h2 id="orders">Корус ORDERS</h2>
-<ul>
-<li>Заказ R260-&gt;KOD <strong>283</strong> Импорт заказов EDI Эдисофт, Корус</li>
-</ul>
-<p>\\fabius\d$\fabius\EDI_Korus\IN\ORDERS</p>
-<p>y:\Fabius\Edi_Korus\IN\ORDERS</p>
-<p>3124019258_ORDERS_4607816029995_P.xml</p>
-<p><a href="https://wiki.sftserv.ru/index.php/ORDERS">wiki.sftserv.ru/index.php/ORDERS</a> описание всех тегов по-русски</p>
-<h2 id="ordrsp">Корус ORDRSP</h2>
-<p>y:\Fabius\Edi_Korus\Out\ORDRSP</p>
+                <h1 id="ig2md">ig2.md</h1>
+<p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
+<p>EDI заказ из файла i:\temp\exp1\ORDERS_MK_3127928898.xml</p>
+<p>Диспетчерская (все заказы) - Документы - Добавление заказов из электронной почты</p>
+<h2 id="exel_from_zak5-sg">EXEL_FROM_ZAK5 sg Сергей</h2>
+<ol>
+<li>
+<p>Программа выполняет подготовительные действия: объявляет переменные, загружает параметры и настройки, проверяет наличие запущенных процессов приема заказов.</p>
+</li>
+<li>
+<p>Обрабатывает архивные файлы: распаковывает архивы (RAR, ZIP и др.) во временные каталоги, извлекает файлы заказов (XLS, XLSX, XML, DBF) и перемещает их в рабочие каталоги.</p>
+</li>
+<li>
+<p>Выполняет отбор и сортировку файлов заказов по различным схемам (Excel, EDI, DBF, ADT, COMERS) в зависимости от конфигурации и параметров.</p>
+</li>
+<li>
+<p>Обрабатывает файлы Excel: извлекает данные из ячеек (даты, магазины, продукцию, количество, время доставки, примечания), проверяет корректность данных и соответствие справочникам.</p>
+</li>
+<li>
+<p>Обрабатывает файлы EDI: преобразует XML-структуры в данные заказов, проверяет коды магазинов и продукции, формирует ответы на заказы.</p>
+</li>
+<li>
+<p>Обрабатывает файлы DBF и другие форматы: загружает данные по соответствующим схемам.</p>
+</li>
+<li>
+<p>Добавляет данные заказов в базу данных: обновляет или создает записи в документах заказов (ZAK), учитывает корректировки и отмены, разделяет заказы по экспедициям.</p>
+</li>
+<li>
+<p>Отправляет подтверждения и ответы: формирует и отправляет электронные письма с результатами обработки заказов, отправляет файлы в подразделения.</p>
+</li>
+<li>
+<p>Выполняет завершающие действия: закрывает соединения с базой данных, освобождает ресурсы, удаляет обработанные файлы, записывает ошибки в лог-файлы.</p>
+</li>
+</ol>
+<h2 id="r525-e-mail-">R525 e-mail-ы по контрагентам</h2>
+<p>Используется для работы справочник</p>
+<p><a href="https://wiki.sftserv.ru/index.php/R525">R525  e-mail-ы по контрагентам</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../orl/orl/" class="btn btn-neutral float-left" title="orl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../vor/vor/" class="btn btn-neutral float-right" title="vor">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../ghc/ghc/" class="btn btn-neutral float-left" title="ghc"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../krl/krl/" class="btn btn-neutral float-right" title="krl">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -175,10 +201,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../orl/orl/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../ghc/ghc/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../vor/vor/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../krl/krl/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
