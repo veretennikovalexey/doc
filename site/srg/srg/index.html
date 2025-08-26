@@ -102,6 +102,10 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">srg</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#192168101253dfabiusregslogfileslog_import_xml">\\192.168.101.253\d$\fabius\regs\LogFiles\LOG_Import_Xml</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#ordrsp">Корус ORDRSP</a>
@@ -161,10 +165,35 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="srgmd">srg.md</h1>
+<h2 id="192168101253dfabiusregslogfileslog_import_xml">\\192.168.101.253\d$\fabius\regs\LogFiles\LOG_Import_Xml</h2>
+<pre><code class="language-c">&gt;Fabius_for_service.exe (запуск: 02.08.2025-1:00:04)  =&gt;  Import_Edi_R641() (запуск: 02.08.2025-6:35:04)
+User: (160) Планировщик   WorkPc: 3023686385 -&gt; 001   taskName:   taskNum: 0
+   Выделено памяти: 71`541`846,  Свободно памяти: 17`181`760
+   Время работы: 00:00:03 час:мин:сек (3сек.)
+Config: r260kod=283, r641kod=5, r643kod=5, r644kod=1
+
+
+283 Соединение c Ftp сервером (ftp://ftp.esphere.ru)
+  Прием файла  ftp://ftp.esphere.ru:  /P/outbound/ORDERS/3108472863_ORDERS_4607816029995_P.xml --&gt; \\fabius\d$\fabius\EDI_Korus\IN\ORDERS\3108472863_ORDERS_4607816029995_P.xml
+    Файл успешно принят:  \\fabius\d$\fabius\EDI_Korus\IN\ORDERS\3108472863_ORDERS_4607816029995_P.xml   в наличии на локальном сервере
+      файл:  3108472863_ORDERS_4607816029995_P.xml   удален c ftp сервера ftp://ftp.esphere.ru
+</code></pre>
+<h2 id="r260">R260 Импорт/экспорт файлов</h2>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Наименование настройки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>283</td>
+<td>Импорт заказов EDI Эдисофт, Корус</td>
+</tr>
+</tbody>
+</table>
 <h2 id="orders">Корус ORDERS</h2>
-<ul>
-<li>Заказ R260-&gt;KOD <strong>283</strong> Импорт заказов EDI Эдисофт, Корус</li>
-</ul>
 <p>\\fabius\d$\fabius\EDI_Korus\IN\ORDERS</p>
 <p>y:\Fabius\Edi_Korus\IN\ORDERS</p>
 <p>3124019258_ORDERS_4607816029995_P.xml</p>
