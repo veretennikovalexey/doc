@@ -60,6 +60,10 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#zak">Документ ZAK</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#doctoprint">Список бланков экспедиции DOCTOPRINT</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r221-rth2-edi-195-edi_xml">R221 RTH2 Уведомление об отгрузке EDI-Контур (195) Edi_Xml</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#_1">Контур</a>
@@ -169,6 +173,20 @@
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
 <p>Реквизит PRIM Примечание 1 _</p>
 <p>Принято из EDI (из Xml (192) 19.08.2025 11:51:23)</p>
+<h2 id="doctoprint">Список бланков экспедиции DOCTOPRINT</h2>
+<p>RTH1T,RTH1T,Edi_Xml</p>
+<h2 id="r221-rth2-edi-195-edi_xml">R221 RTH2 Уведомление об отгрузке EDI-Контур (195) Edi_Xml</h2>
+<pre><code class="language-php">&lt;REPORT/OPENPIPELINE&gt;
+DoImpExp(,,GetArea(),195,.t.)
+StopReport()
+</code></pre>
+<p>z:\fabius\Temp\ExportDesadv_20250723_5_35_43.log</p>
+<pre><code>Запуск: 23.07.25 5:35:43
+Соединение с FTP - установлено
+FTPPut: Файл z:\EDI Контур\Уведомление об отгрузке\Desadv1230725230.xml - выполнено!
+FTPPut: Файл z:\EDI Контур\Уведомление об отгрузке\Desadv1230725158.xml - выполнено!
+Соединение с FTP - закрыто
+</code></pre>
 <h2 id="r260">R260 Импорт/экспорт файлов</h2>
 <table>
 <thead>
@@ -181,6 +199,14 @@
 <tr>
 <td>192</td>
 <td>Прием заказов EDI (Контур)</td>
+</tr>
+<tr>
+<td>195</td>
+<td>Отправка EDI Уведомления об отгрузке (Контур)</td>
+</tr>
+<tr>
+<td>293</td>
+<td>Экспорт УКД в формате XML ФНС (ON_KORSCHFDOPPR)</td>
 </tr>
 </tbody>
 </table>
@@ -225,21 +251,6 @@
 <p>z:\EDI Контур\УКД</p>
 <p>Реализация - Документы - "Торг-2" - акты о расхождении при приемке ТМЦ - Коррект.счета (кн.покупок) по актам "Торг-2" - Коррект.счета (кн.покупок) по актам "Торг-2" полностью</p>
 <p><strong>ON_KORSCHFDOPPR</strong></p>
-<p>R260 Импорт/экспорт файлов</p>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Наименование настройки</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>293</td>
-<td>Экспорт УКД в формате XML ФНС (ON_KORSCHFDOPPR)</td>
-</tr>
-</tbody>
-</table>
               
             </div>
           </div><footer>
