@@ -92,9 +92,11 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#zak-prim">Документ ZAK - PRIM Примечание</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#hk-srvloglogfileslog_export_xml">\\hk-srv\log\LogFiles\LOG_Export_Xml</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
     </li>
     </ul>
                 </li>
@@ -172,6 +174,31 @@ endif
 <p>R260 (105) 19.08.2025 14:11:26</p>
 <p>\\hk-srv\export\Korus</p>
 <p>\ORDERS_c7712208-60c6-b2b5-bb9b-fb262c37b782.xml</p>
+<h2 id="orders">Корус ORDERS</h2>
+<p>z:\Korus</p>
+<h2 id="hk-srvloglogfileslog_export_xml">\\hk-srv\log\LogFiles\LOG_Export_Xml</h2>
+<pre><code class="language-c">&gt;Fabius1.exe (запуск: 24.08.2025-20:50:46)  =&gt;  Export_Edi_R641() (запуск: 25.08.2025-1:04:52)
+Run by User: (450) СЕЧИНА Д.   WorkPc: 6719026928 -&gt; 003   taskName: EXPED  taskNum: 1
+   Выделено памяти: 126`700`714,  Свободно памяти: 12`819`768
+   Время работы: 00:00:02 час:мин:сек (2сек.)
+Config: r260kod=308, r641kod=6, r642kod=0, r643kod=18, r644kod=0, r645kod=0
+
+==================================================
+Документ № 1250850552 от 25.08.2025.    Успешно сформирован:   \\HK-SRV\BREAD\FABIUS\Temp\192168053.003\DESADV_1250850552__20250825_1_04_50.xml
+--------------------------------------------------
+Файл  DESADV_1250850552__20250825_1_04_50.xml
+        скопирован  из 
+   \\HK-SRV\BREAD\FABIUS\Temp\192168053.003
+        в 
+   \\hk-srv\export\Korus\EDI\OUT\DESADV\Processed
+--------------------------------------------------
+Файл  DESADV_1250850552__20250825_1_04_50.xml
+        перемещен  из 
+   \\HK-SRV\BREAD\FABIUS\Temp\192168053.003
+        в 
+   \\hk-srv\export\Korus\EDI\OUT\DESADV
+==================================================
+</code></pre>
 <h2 id="r260">R260 Импорт/экспорт файлов</h2>
 <table>
 <thead>
@@ -185,10 +212,12 @@ endif
 <td>105</td>
 <td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
 </tr>
+<tr>
+<td>308</td>
+<td>Экспорт XML DESADV Контур  (с тарой SSCC)</td>
+</tr>
 </tbody>
 </table>
-<h2 id="orders">Корус ORDERS</h2>
-<p>z:\Korus</p>
               
             </div>
           </div><footer>
