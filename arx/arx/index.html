@@ -56,9 +56,13 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#edi">Прием заказов EDI</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r641">R641</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#xfabiustemplogfileslog_import_xml">x:\Fabius\Temp\LogFiles\LOG_Import_Xml</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#r641">R641</a>
+    <li class="toctree-l2"><a class="reference internal" href="#ftp">FTP сервер</a>
     </li>
     </ul>
                 </li>
@@ -169,21 +173,6 @@
   DoImpExp('10',,,105)
 endif
 </code></pre>
-<h2 id="r260">R260 Импорт/экспорт файлов</h2>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Наименование настройки</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>105</td>
-<td>Прием заказов(EDI обмен) «КОРУС Консалтинг»</td>
-</tr>
-</tbody>
-</table>
 <h2 id="r641">R641</h2>
 <p>Диспетчерская (все заказы) - Справочники - Настройки EDI обмена - Список EDI провайдеров</p>
 <table>
@@ -220,6 +209,39 @@ endif
 </tr>
 </tbody>
 </table>
+<h2 id="xfabiustemplogfileslog_import_xml">x:\Fabius\Temp\LogFiles\LOG_Import_Xml</h2>
+<pre><code>&gt;Fabius1.exe (запуск: 19.05.2025-9:48:05)  =&gt;  Import_Edi_R641() (запуск: 19.05.2025-10:22:46)
+User: (13) Yan   WorkPc: 5470568436 -&gt; 001
+   Время работы: 00:00:03 час:мин:сек (2,58сек.)
+Config: r260kod=378, r641kod=6, r643kod=24, r644kod=6
+
+
+378 Соединение c Ftp сервером (ftp://ftp-edi-01.kontur.ru)
+  Прием файла  ftp://ftp-edi-01.kontur.ru:  /Inbox/RECADV_e0e8ede2-d1c6-576d-4240-d656631442fe.xml --&gt; \\Titan-fabius\programm\Fabius\EDI_IMP\RECADV\RECADV_e0e8ede2-d1c6-576d-4240-d656631442fe.xml
+    Файл успешно принят:  \\Titan-fabius\programm\Fabius\EDI_IMP\RECADV\RECADV_e0e8ede2-d1c6-576d-4240-d656631442fe.xml   в наличии на локальном сервере
+      файл:  RECADV_e0e8ede2-d1c6-576d-4240-d656631442fe.xml   удален c ftp сервера ftp://ftp-edi-01.kontur.ru
+</code></pre>
+<h2 id="r260">R260 Импорт/экспорт файлов</h2>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Наименование настройки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>105</td>
+<td>Прием заказов(EDI обмен) «КОРУС Консалтинг»</td>
+</tr>
+<tr>
+<td>378</td>
+<td>Прием подтв.приемки Recadv (EDI обмен)(Xml)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ftp">FTP сервер</h2>
+<p><code>ftp://ftp-edi-01.kontur.ru</code></p>
               
             </div>
           </div><footer>
