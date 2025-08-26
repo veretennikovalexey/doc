@@ -6,6 +6,15 @@
 
 Программа _EDI_LD_ORDERS
 
+## d:\Fabius\Opdata\EDI_log
+
+```sql
+SELECT *
+FROM EDI_log
+```
+
+Размер 13,9 ГБ
+
 ## R641 (2) Контур
 
 Документы ON_NSCHFDOPPR располагаются в папке

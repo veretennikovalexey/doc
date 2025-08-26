@@ -78,11 +78,15 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">krl</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#ftp-exite">Заказы поступают с FTP сервера Exite</a>
+    <li class="toctree-l2"><a class="reference internal" href="#fabius2020logskalinlogfileslog_import_xml">\\FABIUS2020\Logs\Kalin\LogFiles\LOG_Import_Xml</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#zer">Документ ZER</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#exite">Exite</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ftp-exite">Заказы поступают с FTP сервера Exite</a>
     </li>
     </ul>
                 </li>
@@ -163,12 +167,37 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="krlmd">krl.md</h1>
-<h2 id="ftp-exite">Заказы поступают с FTP сервера Exite</h2>
-<p><code>ftpex.e-vo.ru</code></p>
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
 <p>R260 (377) E-Com (Docrobot) 23.08.2025 12:49:26</p>
 <p>\\Fabius2020\BASE\FABIUS\Edi\Exite</p>
 <p>\Orders\order_20250823124807_7fbb3208-c614-45a8-8af6-73d768a26866.xml</p>
+<h2 id="fabius2020logskalinlogfileslog_import_xml">\\FABIUS2020\Logs\Kalin\LogFiles\LOG_Import_Xml</h2>
+<pre><code class="language-java">&gt;Fabius.exe (запуск: 25.08.2025-8:07:51)  =&gt;  Import_Edi_R641() (запуск: 25.08.2025-13:20:38)
+User: (407) Банцекина Н.В.   WorkPc: 5156714762 -&gt; 001
+   Время работы: 00:00:17 час:мин:сек (16,7сек.)
+Config: r260kod=377, r641kod=1, r643kod=1, r644kod=2
+
+
+377 Соединение c Ftp сервером (ftpex.e-vo.ru)
+  Прием файла  ftpex.e-vo.ru:  /inbox/order_20250825132017_3c166b16-4d21-442e-afba-f0437efee972.xml --&gt; \\Fabius2020\BASE\FABIUS\Edi\Exite\Orders\order_20250825132017_3c166b16-4d21-442e-afba-f0437efee972.xml
+    Файл успешно принят:  \\Fabius2020\BASE\FABIUS\Edi\Exite\Orders\order_20250825132017_3c166b16-4d21-442e-afba-f0437efee972.xml   в наличии на локальном сервере
+      файл:  /inbox/order_20250825132017_3c166b16-4d21-442e-afba-f0437efee972.xml   удален c ftp сервера ftpex.e-vo.ru
+</code></pre>
+<h2 id="r260">R260 Импорт/экспорт файлов</h2>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Наименование настройки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>377</td>
+<td>Прием заказов (EDI обмен) (Xml/Excel/...)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="zer">Документ ZER</h2>
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Ошибки и отказы при автоматическом приеме заказов торговли - Ошибки в заказах за месяц</p>
 <h2 id="exite">Exite</h2>
@@ -206,6 +235,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="ftp-exite">Заказы поступают с FTP сервера Exite</h2>
+<p><code>ftpex.e-vo.ru</code></p>
               
             </div>
           </div><footer>
