@@ -86,7 +86,15 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">mor</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ftp-kontur">Заказы поступают с FTP сервера Kontur</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#_1">Планировщик заданий</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#edi-orders-r641">Скачивание и обработка заказов EDI-Orders. Универсальная схема по R641</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zfabiustemplogfileslog_import_xml">z:\FABIUS\Temp\LogFiles\LOG_Import_Xml</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
     </li>
     </ul>
                 </li>
@@ -159,6 +167,8 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="mormd">mor.md</h1>
+<h2 id="ftp-kontur">Заказы поступают с FTP сервера Kontur</h2>
+<p><code>ftp://ftp-edi.kontur.ru</code></p>
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
 <p>R260 (377) Kontur 24.08.2025 19:43:29</p>
 <p>\\bkkmorshan\data\Fabius\EDI\Kontur</p>
@@ -181,6 +191,37 @@
 <tr>
 <td>93</td>
 <td>Скачивание и обработка заказов EDI-Orders. Универсальная схема по R641</td>
+</tr>
+</tbody>
+</table>
+<h2 id="edi-orders-r641">Скачивание и обработка заказов EDI-Orders. Универсальная схема по R641</h2>
+<pre><code class="language-php">Import_Edi_r641('Orders',,{'*'},.t.)
+</code></pre>
+<h2 id="zfabiustemplogfileslog_import_xml">z:\FABIUS\Temp\LogFiles\LOG_Import_Xml</h2>
+<pre><code class="language-log">&gt;Fabius_service.exe (запуск: 25.08.2025-9:25:19)  =&gt;  Import_Edi_R641() (запуск: 26.08.2025-7:25:20)
+User: (100) Планировщик   WorkPc: 5699352197 -&gt; 001   taskName:   taskNum: 0
+   Выделено памяти: 70`922`306,  Свободно памяти: 21`731`116
+   Время работы: 00:00:01 час:мин:сек (0,857сек.)
+Config: r260kod=378, r641kod=6, r643kod=24, r644kod=7
+
+
+378 Соединение c Ftp сервером (ftp://ftp-edi.kontur.ru)
+  Прием файла  ftp://ftp-edi.kontur.ru:  /Inbox/RECADV_7c47d116-8232-11f0-9e54-1e78dd2e1a55.xml --&gt; \\bkkmorshan\data\Fabius\EDI\Kontur\Recadv\RECADV_7c47d116-8232-11f0-9e54-1e78dd2e1a55.xml
+    Файл успешно принят:  \\bkkmorshan\data\Fabius\EDI\Kontur\Recadv\RECADV_7c47d116-8232-11f0-9e54-1e78dd2e1a55.xml   в наличии на локальном сервере
+      файл:  RECADV_7c47d116-8232-11f0-9e54-1e78dd2e1a55.xml   удален c ftp сервера ftp://ftp-edi.kontur.ru
+</code></pre>
+<h2 id="r260">R260 Импорт/экспорт файлов</h2>
+<table>
+<thead>
+<tr>
+<th>Код</th>
+<th>Наименование настройки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>378</td>
+<td>Прием подтв.приемки Recadv (EDI обмен)(Xml)</td>
 </tr>
 </tbody>
 </table>
