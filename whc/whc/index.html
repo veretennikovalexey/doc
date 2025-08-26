@@ -114,9 +114,11 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">whc</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#server15flogslogfileslog_export_xml">\\Server15\F\Logs\LogFiles\LOG_Export_Xml</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
     </li>
     </ul>
                 </li>
@@ -163,6 +165,28 @@
                 <h1 id="whcmd">whc.md</h1>
 <p>Диспетчерская (все заказы) - Документы - Заказы торговли / ездки - Заказы за смену</p>
 <p>R260 (105) 19.08.2025</p>
+<h2 id="orders">Корус ORDERS</h2>
+<p>C:\1_EDI</p>
+<p>У Вадима заказы расположены локально у оператора, т.е. на сервере файлов нет</p>
+<p>Диспетчерская (все заказы) - Обмен данными (прием заказов из XML) - Прием заказов EDI</p>
+<pre><code class="language-php">if !Import_Edi_r641('Orders')
+  DoImpExp('10',,,105)
+endif
+</code></pre>
+<h2 id="server15flogslogfileslog_export_xml">\\Server15\F\Logs\LogFiles\LOG_Export_Xml</h2>
+<pre><code class="language-php">&gt;Fabius.exe (запуск: 26.08.2025-8:06:04)  =&gt;  Export_Edi_R641() (запуск: 26.08.2025-15:46:42)
+Run by User: (211) Захарова О.Н.   WorkPc: 1240522800 -&gt; 003   taskName: SALE  taskNum: 1
+   Выделено памяти: 274`320`486,  Свободно памяти: 6`061`856
+   Время работы: 00:00:04 час:мин:сек (4,412сек.)
+Config: r260kod=372, r641kod=9, r642kod=0, r643kod=58, r644kod=0, r645kod=0
+
+==================================================
+Документ № 687029 от 22.08.2025.  Формирование Invoice xml (372). (211) Захарова О.Н.
+Документ № 687029 от 22.08.2025.  Успешно сформирован:
+   c:\1_edi\ok\Invoice_687029.xml
+--------------------------------------------------
+==================================================
+</code></pre>
 <h2 id="r260">R260 Импорт/экспорт файлов</h2>
 <table>
 <thead>
@@ -176,16 +200,12 @@
 <td>105</td>
 <td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
 </tr>
+<tr>
+<td>372</td>
+<td>Экспорт XML Invoice/InvDop Корус ECOD (Сфера)</td>
+</tr>
 </tbody>
 </table>
-<h2 id="orders">Корус ORDERS</h2>
-<p>C:\1_EDI</p>
-<p>У Вадима заказы расположены локально у оператора, т.е. на сервере файлов нет</p>
-<p>Диспетчерская (все заказы) - Обмен данными (прием заказов из XML) - Прием заказов EDI</p>
-<pre><code class="language-php">if !Import_Edi_r641('Orders')
-  DoImpExp('10',,,105)
-endif
-</code></pre>
               
             </div>
           </div><footer>
