@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>orl - Мои дела</title>
+    <title>Дети - Мои дела</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "orl";
-        var mkdocs_page_input_path = "orl\\orl.md";
+        var mkdocs_page_name = "\u0414\u0435\u0442\u0438";
+        var mkdocs_page_input_path = "child\\child.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -87,18 +87,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../mor/mor/">mor</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">orl</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#zak-prim">Документ ZAK - PRIM Примечание</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#orders">Корус ORDERS</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#hk-srvloglogfileslog_export_xml">\\hk-srv\log\LogFiles\LOG_Export_Xml</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#r260">R260 Импорт/экспорт файлов</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../orl/orl/">orl</a>
                 </li>
               </ul>
               <ul>
@@ -141,8 +131,10 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../child/child/">Дети</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Дети</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
       </div>
@@ -159,7 +151,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">orl</li>
+      <li class="breadcrumb-item active">Дети</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -168,66 +160,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="orlmd">orl.md</h1>
-<p>Диспетчерская (все заказы) - Обмен данными (прием заказов из XML) - Прием заказов EDI</p>
-<pre><code class="language-php">if !Import_Edi_r641('Orders')
-  DoImpExp('10',,,105)
-endif
-</code></pre>
-<h2 id="zak-prim">Документ ZAK - PRIM Примечание</h2>
-<p>R260 (105) 19.08.2025 14:11:26</p>
-<p>\\hk-srv\export\Korus</p>
-<p>\ORDERS_c7712208-60c6-b2b5-bb9b-fb262c37b782.xml</p>
-<h2 id="orders">Корус ORDERS</h2>
-<p>z:\Korus</p>
-<h2 id="hk-srvloglogfileslog_export_xml">\\hk-srv\log\LogFiles\LOG_Export_Xml</h2>
-<pre><code class="language-c">&gt;Fabius1.exe (запуск: 24.08.2025-20:50:46)  =&gt;  Export_Edi_R641() (запуск: 25.08.2025-1:04:52)
-Run by User: (450) СЕЧИНА Д.   WorkPc: 6719026928 -&gt; 003   taskName: EXPED  taskNum: 1
-   Выделено памяти: 126`700`714,  Свободно памяти: 12`819`768
-   Время работы: 00:00:02 час:мин:сек (2сек.)
-Config: r260kod=308, r641kod=6, r642kod=0, r643kod=18, r644kod=0, r645kod=0
-
-==================================================
-Документ № 1250850552 от 25.08.2025.    Успешно сформирован:   \\HK-SRV\BREAD\FABIUS\Temp\192168053.003\DESADV_1250850552__20250825_1_04_50.xml
---------------------------------------------------
-Файл  DESADV_1250850552__20250825_1_04_50.xml
-        скопирован  из 
-   \\HK-SRV\BREAD\FABIUS\Temp\192168053.003
-        в 
-   \\hk-srv\export\Korus\EDI\OUT\DESADV\Processed
---------------------------------------------------
-Файл  DESADV_1250850552__20250825_1_04_50.xml
-        перемещен  из 
-   \\HK-SRV\BREAD\FABIUS\Temp\192168053.003
-        в 
-   \\hk-srv\export\Korus\EDI\OUT\DESADV
-==================================================
-</code></pre>
-<h2 id="r260">R260 Импорт/экспорт файлов</h2>
-<table>
-<thead>
-<tr>
-<th>Код</th>
-<th>Наименование настройки</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>105</td>
-<td>Прием заказов (EDI обмен) «КОРУС Консалтинг»</td>
-</tr>
-<tr>
-<td>308</td>
-<td>Экспорт XML DESADV Контур  (с тарой SSCC)</td>
-</tr>
-</tbody>
-</table>
+                <h1 id="childchildmd">child/child.md</h1>
+<p>28.08.2025 Запиши Андрея в бассейн ! Узнай цены</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../mor/mor/" class="btn btn-neutral float-left" title="mor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../shc/shc/" class="btn btn-neutral float-right" title="shc">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../folder/folder/" class="btn btn-neutral float-left" title="Четвёртое ТО"><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -250,10 +189,8 @@ Config: r260kod=308, r641kod=6, r642kod=0, r643kod=18, r644kod=0, r645kod=0
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../mor/mor/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../folder/folder/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-    
-      <span><a href="../../shc/shc/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
