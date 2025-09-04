@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>XMLMAPPER - Мои дела</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "XMLMAPPER";
+        var mkdocs_page_input_path = "XMLMAPPER\\XMLMAPPER.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Мои дела
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/%D0%9A%D0%BE%D0%BD%D1%82%D1%83%D1%80/">192 Контур</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../%D0%9A%D0%BE%D1%80%D1%83%D1%81/%D0%9A%D0%BE%D1%80%D1%83%D1%81/">105 Корус</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Exite/Exite/">152 Exite</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">XMLMAPPER</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#konturordrspxsd">KonturOrdrsp.xsd</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#konturordrspxmltodpxtr">KonturOrdrspXmlToDp.xtr</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#konturordrspdptoxmlxtr">KonturOrdrspDpToXml.xtr</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../arx/arx/">arx</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../dtv/dtv/">dtv</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ehc/ehc/">ehc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ghc/ghc/">ghc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../ig2/ig2/">ig2</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../klm/klm/">klm</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../krl/krl/">krl</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../mgn/mgn/">mgn</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../mor/mor/">mor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../orl/orl/">orl</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../shc/shc/">shc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../sn1/sn1/">sn1</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../srg/srg/">srg</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../trb/trb/">trb</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../vor/vor/">vor</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../whc/whc/">whc</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../zrs/zrs/">zrs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">sftserv.ru/chronology/DISP/826.htm</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../index2/">Информация об организации по GLN</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../folder/folder/">Четвёртое ТО</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../child/child/">Дети</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Мои дела</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">XMLMAPPER</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="xmlmappermd">XMLMAPPER.md</h1>
+<h2 id="konturordrspxsd">KonturOrdrsp.xsd</h2>
+<pre><code class="language-xml">&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  &lt;xs:element name=&quot;eDIMessage&quot; type=&quot;eDIMessageType&quot;/&gt;
+  &lt;xs:complexType name=&quot;eDIMessageType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;interchangeHeader&quot; type=&quot;interchangeHeaderType&quot;/&gt;
+      &lt;xs:element name=&quot;orderResponse&quot; type=&quot;orderResponseType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;id&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;creationDateTime&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;interchangeHeader&quot; type=&quot;interchangeHeaderType&quot;/&gt;
+  &lt;xs:complexType name=&quot;interchangeHeaderType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;sender&quot; type=&quot;senderType&quot;/&gt;
+      &lt;xs:element name=&quot;recipient&quot; type=&quot;recipientType&quot;/&gt;
+      &lt;xs:element name=&quot;documentType&quot; type=&quot;documentTypeType&quot;/&gt;
+      &lt;xs:element name=&quot;isTest&quot; type=&quot;isTestType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;sender&quot; type=&quot;senderType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;senderType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;recipient&quot; type=&quot;recipientType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;recipientType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;documentType&quot; type=&quot;documentTypeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;documentTypeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;isTest&quot; type=&quot;isTestType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;isTestType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;orderResponse&quot; type=&quot;orderResponseType&quot;/&gt;
+  &lt;xs:complexType name=&quot;orderResponseType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;originOrder&quot; type=&quot;originOrderType&quot;/&gt;
+      &lt;xs:element name=&quot;blanketOrderIdentificator&quot; type=&quot;blanketOrderIdentificatorType&quot;/&gt;
+      &lt;xs:element name=&quot;seller&quot; type=&quot;sellerType&quot;/&gt;
+      &lt;xs:element name=&quot;buyer&quot; type=&quot;buyerType&quot;/&gt;
+      &lt;xs:element name=&quot;deliveryInfo&quot; type=&quot;deliveryInfoType&quot;/&gt;
+      &lt;xs:element name=&quot;lineItems&quot; type=&quot;lineItemsType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;date&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;originOrder&quot; type=&quot;originOrderType&quot;/&gt;
+  &lt;xs:complexType name=&quot;originOrderType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;date&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;blanketOrderIdentificator&quot; type=&quot;blanketOrderIdentificatorType&quot;/&gt;
+  &lt;xs:complexType name=&quot;blanketOrderIdentificatorType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;seller&quot; type=&quot;sellerType&quot;/&gt;
+  &lt;xs:complexType name=&quot;sellerType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+      &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+  &lt;xs:complexType name=&quot;organizationType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+      &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+      &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;nameType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;innType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;kppType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;buyer&quot; type=&quot;buyerType&quot;/&gt;
+  &lt;xs:complexType name=&quot;buyerType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+      &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+  &lt;xs:complexType name=&quot;organizationType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+      &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+      &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;deliveryInfo&quot; type=&quot;deliveryInfoType&quot;/&gt;
+  &lt;xs:complexType name=&quot;deliveryInfoType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;estimatedDeliveryDateTime&quot; type=&quot;estimatedDeliveryDateTimeType&quot;/&gt;
+      &lt;xs:element name=&quot;shipFrom&quot; type=&quot;shipFromType&quot;/&gt;
+      &lt;xs:element name=&quot;shipTo&quot; type=&quot;shipToType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;estimatedDeliveryDateTime&quot; type=&quot;estimatedDeliveryDateTimeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;estimatedDeliveryDateTimeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;shipFrom&quot; type=&quot;shipFromType&quot;/&gt;
+  &lt;xs:complexType name=&quot;shipFromType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;shipTo&quot; type=&quot;shipToType&quot;/&gt;
+  &lt;xs:complexType name=&quot;shipToType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;lineItems&quot; type=&quot;lineItemsType&quot;/&gt;
+  &lt;xs:complexType name=&quot;lineItemsType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;currencyISOCode&quot; type=&quot;currencyISOCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;lineItem&quot; type=&quot;lineItemType&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+      &lt;xs:element name=&quot;totalSumExcludingTaxes&quot; type=&quot;totalSumExcludingTaxesType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;currencyISOCode&quot; type=&quot;currencyISOCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;currencyISOCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;lineItem&quot; type=&quot;lineItemType&quot;/&gt;
+  &lt;xs:complexType name=&quot;lineItemType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gtin&quot; type=&quot;gtinType&quot;/&gt;
+      &lt;xs:element name=&quot;internalBuyerCode&quot; type=&quot;internalBuyerCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;internalSupplierCode&quot; type=&quot;internalSupplierCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;orderLineNumber&quot; type=&quot;orderLineNumberType&quot;/&gt;
+      &lt;xs:element name=&quot;description&quot; type=&quot;descriptionType&quot;/&gt;
+      &lt;xs:element name=&quot;confirmedQuantity&quot; type=&quot;confirmedQuantityType&quot;/&gt;
+      &lt;xs:element name=&quot;orderedQuantity&quot; type=&quot;orderedQuantityType&quot;/&gt;
+      &lt;xs:element name=&quot;netPrice&quot; type=&quot;netPriceType&quot;/&gt;
+      &lt;xs:element name=&quot;netPriceWithVAT&quot; type=&quot;netPriceWithVATType&quot;/&gt;
+      &lt;xs:element name=&quot;netAmount&quot; type=&quot;netAmountType&quot;/&gt;
+      &lt;xs:element name=&quot;amount&quot; type=&quot;amountType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gtin&quot; type=&quot;gtinType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;gtinType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;internalBuyerCode&quot; type=&quot;internalBuyerCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;internalBuyerCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;internalSupplierCode&quot; type=&quot;internalSupplierCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;internalSupplierCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;orderLineNumber&quot; type=&quot;orderLineNumberType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;orderLineNumberType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;description&quot; type=&quot;descriptionType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;descriptionType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;confirmedQuantity&quot; type=&quot;confirmedQuantityType&quot;/&gt;
+  &lt;xs:complexType name=&quot;confirmedQuantityType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;unitOfMeasure&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;orderedQuantity&quot; type=&quot;orderedQuantityType&quot;/&gt;
+  &lt;xs:complexType name=&quot;orderedQuantityType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;unitOfMeasure&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;netPrice&quot; type=&quot;netPriceType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netPriceType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;netPriceWithVAT&quot; type=&quot;netPriceWithVATType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netPriceWithVATType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;netAmount&quot; type=&quot;netAmountType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netAmountType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;amount&quot; type=&quot;amountType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;amountType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;totalSumExcludingTaxes&quot; type=&quot;totalSumExcludingTaxesType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;totalSumExcludingTaxesType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+&lt;/xs:schema&gt;
+</code></pre>
+<h2 id="konturordrspxmltodpxtr">KonturOrdrspXmlToDp.xtr</h2>
+<pre><code class="language-xml">&lt;XmlTransformation Version=&quot;1.0&quot;&gt;&lt;Transform Direction=&quot;ToCds&quot; DataEncoding=&quot;utf-8&quot;&gt;&lt;SelectEach dest=&quot;DATAPACKET\ROWDATA\ROW&quot; from=&quot;\eDIMessage&quot;&gt;&lt;Select dest=&quot;@id&quot; from=&quot;@id&quot;/&gt;&lt;Select dest=&quot;@creationDateTime&quot; from=&quot;@creationDateTime&quot;/&gt;&lt;Select dest=&quot;@sender&quot; from=&quot;\interchangeHeader\sender&quot;/&gt;&lt;Select dest=&quot;@recipient&quot; from=&quot;\interchangeHeader\recipient&quot;/&gt;&lt;Select dest=&quot;@documentType&quot; from=&quot;\interchangeHeader\documentType&quot;/&gt;&lt;Select dest=&quot;@isTest&quot; from=&quot;\interchangeHeader\isTest&quot;/&gt;&lt;Select dest=&quot;@number1&quot; from=&quot;\orderResponse@number&quot;/&gt;&lt;Select dest=&quot;@date1&quot; from=&quot;\orderResponse@date&quot;/&gt;&lt;Select dest=&quot;@status&quot; from=&quot;\orderResponse@status&quot;/&gt;&lt;Select dest=&quot;@number2&quot; from=&quot;\orderResponse\originOrder@number&quot;/&gt;&lt;Select dest=&quot;@date2&quot; from=&quot;\orderResponse\originOrder@date&quot;/&gt;&lt;Select dest=&quot;@number3&quot; from=&quot;\orderResponse\blanketOrderIdentificator@number&quot;/&gt;&lt;Select dest=&quot;@seller_gln&quot; from=&quot;\orderResponse\seller\gln&quot;/&gt;&lt;Select dest=&quot;@organization_name1&quot; from=&quot;\orderResponse\seller\organization\name&quot;/&gt;&lt;Select dest=&quot;@organization_inn1&quot; from=&quot;\orderResponse\seller\organization\inn&quot;/&gt;&lt;Select dest=&quot;@organization_kpp1&quot; from=&quot;\orderResponse\seller\organization\kpp&quot;/&gt;&lt;Select dest=&quot;@buyer_gln&quot; from=&quot;\orderResponse\buyer\gln&quot;/&gt;&lt;Select dest=&quot;@organization_name2&quot; from=&quot;\orderResponse\buyer\organization\name&quot;/&gt;&lt;Select dest=&quot;@organization_inn2&quot; from=&quot;\orderResponse\buyer\organization\inn&quot;/&gt;&lt;Select dest=&quot;@organization_kpp2&quot; from=&quot;\orderResponse\buyer\organization\kpp&quot;/&gt;&lt;Select dest=&quot;@estimatedDeliveryDateTime&quot; from=&quot;\orderResponse\deliveryInfo\estimatedDeliveryDateTime&quot;/&gt;&lt;Select dest=&quot;@shipFrom_gln&quot; from=&quot;\orderResponse\deliveryInfo\shipFrom\gln&quot;/&gt;&lt;Select dest=&quot;@shipTo_gln&quot; from=&quot;\orderResponse\deliveryInfo\shipTo\gln&quot;/&gt;&lt;Select dest=&quot;@currencyISOCode&quot; from=&quot;\orderResponse\lineItems\currencyISOCode&quot;/&gt;&lt;Select dest=&quot;@totalSumExcludingTaxes&quot; from=&quot;\orderResponse\lineItems\totalSumExcludingTaxes&quot;/&gt;&lt;SelectEach dest=&quot;lineItem\ROWlineItem&quot; from=&quot;\orderResponse\lineItems\lineItem&quot;&gt;&lt;Select dest=&quot;@status&quot; from=&quot;@status&quot;/&gt;&lt;Select dest=&quot;@gtin&quot; from=&quot;\gtin&quot;/&gt;&lt;Select dest=&quot;@internalBuyerCode&quot; from=&quot;\internalBuyerCode&quot;/&gt;&lt;Select dest=&quot;@internalSupplierCode&quot; from=&quot;\internalSupplierCode&quot;/&gt;&lt;Select dest=&quot;@orderLineNumber&quot; from=&quot;\orderLineNumber&quot;/&gt;&lt;Select dest=&quot;@description&quot; from=&quot;\description&quot;/&gt;&lt;Select dest=&quot;@confirmedQuantity&quot; from=&quot;\confirmedQuantity&quot;/&gt;&lt;Select dest=&quot;@unitOfMeasure&quot; from=&quot;\confirmedQuantity@unitOfMeasure&quot;/&gt;&lt;Select dest=&quot;@orderedQuantity&quot; from=&quot;\orderedQuantity&quot;/&gt;&lt;Select dest=&quot;@unitOfMeasureOrdered&quot; from=&quot;\orderedQuantity@unitOfMeasure&quot;/&gt;&lt;Select dest=&quot;@netPrice&quot; from=&quot;\netPrice&quot;/&gt;&lt;Select dest=&quot;@netPriceWithVAT&quot; from=&quot;\netPriceWithVAT&quot;/&gt;&lt;Select dest=&quot;@netAmount&quot; from=&quot;\netAmount&quot;/&gt;&lt;Select dest=&quot;@amount&quot; from=&quot;\amount&quot;/&gt;&lt;/SelectEach&gt;&lt;/SelectEach&gt;&lt;/Transform&gt;&lt;XmlSchema RootName=&quot;eDIMessage&quot;&gt;&lt;![CDATA[&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  &lt;xs:element name=&quot;eDIMessage&quot; type=&quot;eDIMessageType&quot;/&gt;
+  &lt;xs:complexType name=&quot;eDIMessageType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;interchangeHeader&quot; type=&quot;interchangeHeaderType&quot;/&gt;
+      &lt;xs:element name=&quot;orderResponse&quot; type=&quot;orderResponseType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;id&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;creationDateTime&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;interchangeHeader&quot; type=&quot;interchangeHeaderType&quot;/&gt;
+  &lt;xs:complexType name=&quot;interchangeHeaderType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;sender&quot; type=&quot;senderType&quot;/&gt;
+      &lt;xs:element name=&quot;recipient&quot; type=&quot;recipientType&quot;/&gt;
+      &lt;xs:element name=&quot;documentType&quot; type=&quot;documentTypeType&quot;/&gt;
+      &lt;xs:element name=&quot;isTest&quot; type=&quot;isTestType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;sender&quot; type=&quot;senderType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;senderType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;recipient&quot; type=&quot;recipientType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;recipientType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;documentType&quot; type=&quot;documentTypeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;documentTypeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;isTest&quot; type=&quot;isTestType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;isTestType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;orderResponse&quot; type=&quot;orderResponseType&quot;/&gt;
+  &lt;xs:complexType name=&quot;orderResponseType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;originOrder&quot; type=&quot;originOrderType&quot;/&gt;
+      &lt;xs:element name=&quot;blanketOrderIdentificator&quot; type=&quot;blanketOrderIdentificatorType&quot;/&gt;
+      &lt;xs:element name=&quot;seller&quot; type=&quot;sellerType&quot;/&gt;
+      &lt;xs:element name=&quot;buyer&quot; type=&quot;buyerType&quot;/&gt;
+      &lt;xs:element name=&quot;deliveryInfo&quot; type=&quot;deliveryInfoType&quot;/&gt;
+      &lt;xs:element name=&quot;lineItems&quot; type=&quot;lineItemsType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;date&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;originOrder&quot; type=&quot;originOrderType&quot;/&gt;
+  &lt;xs:complexType name=&quot;originOrderType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;date&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;blanketOrderIdentificator&quot; type=&quot;blanketOrderIdentificatorType&quot;/&gt;
+  &lt;xs:complexType name=&quot;blanketOrderIdentificatorType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;seller&quot; type=&quot;sellerType&quot;/&gt;
+  &lt;xs:complexType name=&quot;sellerType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+      &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+  &lt;xs:complexType name=&quot;organizationType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+      &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+      &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;nameType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;innType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;kppType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;buyer&quot; type=&quot;buyerType&quot;/&gt;
+  &lt;xs:complexType name=&quot;buyerType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+      &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+  &lt;xs:complexType name=&quot;organizationType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+      &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+      &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;deliveryInfo&quot; type=&quot;deliveryInfoType&quot;/&gt;
+  &lt;xs:complexType name=&quot;deliveryInfoType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;estimatedDeliveryDateTime&quot; type=&quot;estimatedDeliveryDateTimeType&quot;/&gt;
+      &lt;xs:element name=&quot;shipFrom&quot; type=&quot;shipFromType&quot;/&gt;
+      &lt;xs:element name=&quot;shipTo&quot; type=&quot;shipToType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;estimatedDeliveryDateTime&quot; type=&quot;estimatedDeliveryDateTimeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;estimatedDeliveryDateTimeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;shipFrom&quot; type=&quot;shipFromType&quot;/&gt;
+  &lt;xs:complexType name=&quot;shipFromType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;shipTo&quot; type=&quot;shipToType&quot;/&gt;
+  &lt;xs:complexType name=&quot;shipToType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;lineItems&quot; type=&quot;lineItemsType&quot;/&gt;
+  &lt;xs:complexType name=&quot;lineItemsType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;currencyISOCode&quot; type=&quot;currencyISOCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;lineItem&quot; type=&quot;lineItemType&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+      &lt;xs:element name=&quot;totalSumExcludingTaxes&quot; type=&quot;totalSumExcludingTaxesType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;currencyISOCode&quot; type=&quot;currencyISOCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;currencyISOCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;lineItem&quot; type=&quot;lineItemType&quot;/&gt;
+  &lt;xs:complexType name=&quot;lineItemType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gtin&quot; type=&quot;gtinType&quot;/&gt;
+      &lt;xs:element name=&quot;internalBuyerCode&quot; type=&quot;internalBuyerCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;internalSupplierCode&quot; type=&quot;internalSupplierCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;orderLineNumber&quot; type=&quot;orderLineNumberType&quot;/&gt;
+      &lt;xs:element name=&quot;description&quot; type=&quot;descriptionType&quot;/&gt;
+      &lt;xs:element name=&quot;confirmedQuantity&quot; type=&quot;confirmedQuantityType&quot;/&gt;
+      &lt;xs:element name=&quot;orderedQuantity&quot; type=&quot;orderedQuantityType&quot;/&gt;
+      &lt;xs:element name=&quot;netPrice&quot; type=&quot;netPriceType&quot;/&gt;
+      &lt;xs:element name=&quot;netPriceWithVAT&quot; type=&quot;netPriceWithVATType&quot;/&gt;
+      &lt;xs:element name=&quot;netAmount&quot; type=&quot;netAmountType&quot;/&gt;
+      &lt;xs:element name=&quot;amount&quot; type=&quot;amountType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gtin&quot; type=&quot;gtinType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;gtinType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;internalBuyerCode&quot; type=&quot;internalBuyerCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;internalBuyerCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;internalSupplierCode&quot; type=&quot;internalSupplierCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;internalSupplierCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;orderLineNumber&quot; type=&quot;orderLineNumberType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;orderLineNumberType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;description&quot; type=&quot;descriptionType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;descriptionType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;confirmedQuantity&quot; type=&quot;confirmedQuantityType&quot;/&gt;
+  &lt;xs:complexType name=&quot;confirmedQuantityType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;unitOfMeasure&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;orderedQuantity&quot; type=&quot;orderedQuantityType&quot;/&gt;
+  &lt;xs:complexType name=&quot;orderedQuantityType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;unitOfMeasure&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;netPrice&quot; type=&quot;netPriceType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netPriceType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;netPriceWithVAT&quot; type=&quot;netPriceWithVATType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netPriceWithVATType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;netAmount&quot; type=&quot;netAmountType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netAmountType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;amount&quot; type=&quot;amountType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;amountType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;totalSumExcludingTaxes&quot; type=&quot;totalSumExcludingTaxesType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;totalSumExcludingTaxesType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+&lt;/xs:schema&gt;]]&gt;&lt;/XmlSchema&gt;&lt;CdsSkeleton/&gt;&lt;XslTransform/&gt;&lt;Skeleton&gt;&lt;![CDATA[&lt;?xml version=&quot;1.0&quot;?&gt;&lt;DATAPACKET Version=&quot;2.0&quot;&gt;&lt;METADATA&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;id&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;creationDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;sender&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;recipient&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;documentType&quot; fieldtype=&quot;string&quot; WIDTH=&quot;6&quot;/&gt;&lt;FIELD attrname=&quot;isTest&quot; fieldtype=&quot;string&quot; WIDTH=&quot;1&quot;/&gt;&lt;FIELD attrname=&quot;number1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;date1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;number2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;number3&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;seller_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;buyer_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;estimatedDeliveryDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;shipFrom_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;shipTo_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;currencyISOCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;totalSumExcludingTaxes&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;lineItem&quot; fieldtype=&quot;nested&quot;&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;gtin&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;internalBuyerCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;internalSupplierCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;orderLineNumber&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;description&quot; fieldtype=&quot;string&quot; WIDTH=&quot;150&quot;/&gt;&lt;FIELD attrname=&quot;confirmedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasure&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;orderedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasureOrdered&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;netPrice&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netPriceWithVAT&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netAmount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;amount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/FIELD&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/METADATA&gt;&lt;ROWDATA/&gt;&lt;METADATA&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;id&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;creationDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;sender&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;recipient&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;documentType&quot; fieldtype=&quot;string&quot; WIDTH=&quot;6&quot;/&gt;&lt;FIELD attrname=&quot;isTest&quot; fieldtype=&quot;string&quot; WIDTH=&quot;1&quot;/&gt;&lt;FIELD attrname=&quot;number1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;number2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;number3&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;seller_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;buyer_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;estimatedDeliveryDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;shipFrom_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;shipTo_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;currencyISOCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;totalSumExcludingTaxes&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;lineItem&quot; fieldtype=&quot;nested&quot;&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;gtin&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;internalBuyerCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;internalSupplierCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;orderLineNumber&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;description&quot; fieldtype=&quot;string&quot; WIDTH=&quot;150&quot;/&gt;&lt;FIELD attrname=&quot;confirmedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasure&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;orderedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasureOrdered&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;netPrice&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netPriceWithVAT&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netAmount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;amount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/FIELD&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/METADATA&gt;&lt;ROWDATA/&gt;&lt;/DATAPACKET&gt;
+]]&gt;&lt;/Skeleton&gt;&lt;/XmlTransformation&gt;
+</code></pre>
+<h2 id="konturordrspdptoxmlxtr">KonturOrdrspDpToXml.xtr</h2>
+<pre><code class="language-xml">&lt;XmlTransformation Version=&quot;1.0&quot;&gt;&lt;Transform Direction=&quot;ToXml&quot; DataEncoding=&quot;utf-8&quot;&gt;&lt;SelectEach from=&quot;DATAPACKET\ROWDATA\ROW&quot; dest=&quot;\eDIMessage&quot;&gt;&lt;Select from=&quot;@id&quot; dest=&quot;@id&quot;/&gt;&lt;Select from=&quot;@creationDateTime&quot; dest=&quot;@creationDateTime&quot;/&gt;&lt;Select from=&quot;@sender&quot; dest=&quot;\interchangeHeader\sender&quot;/&gt;&lt;Select from=&quot;@recipient&quot; dest=&quot;\interchangeHeader\recipient&quot;/&gt;&lt;Select from=&quot;@documentType&quot; dest=&quot;\interchangeHeader\documentType&quot;/&gt;&lt;Select from=&quot;@isTest&quot; dest=&quot;\interchangeHeader\isTest&quot;/&gt;&lt;Select from=&quot;@number1&quot; dest=&quot;\orderResponse@number&quot;/&gt;&lt;Select from=&quot;@date1&quot; dest=&quot;\orderResponse@date&quot;/&gt;&lt;Select from=&quot;@status&quot; dest=&quot;\orderResponse@status&quot;/&gt;&lt;Select from=&quot;@number2&quot; dest=&quot;\orderResponse\originOrder@number&quot;/&gt;&lt;Select from=&quot;@date2&quot; dest=&quot;\orderResponse\originOrder@date&quot;/&gt;&lt;Select from=&quot;@number3&quot; dest=&quot;\orderResponse\blanketOrderIdentificator@number&quot;/&gt;&lt;Select from=&quot;@seller_gln&quot; dest=&quot;\orderResponse\seller\gln&quot;/&gt;&lt;Select from=&quot;@organization_name1&quot; dest=&quot;\orderResponse\seller\organization\name&quot;/&gt;&lt;Select from=&quot;@organization_inn1&quot; dest=&quot;\orderResponse\seller\organization\inn&quot;/&gt;&lt;Select from=&quot;@organization_kpp1&quot; dest=&quot;\orderResponse\seller\organization\kpp&quot;/&gt;&lt;Select from=&quot;@buyer_gln&quot; dest=&quot;\orderResponse\buyer\gln&quot;/&gt;&lt;Select from=&quot;@organization_name2&quot; dest=&quot;\orderResponse\buyer\organization\name&quot;/&gt;&lt;Select from=&quot;@organization_inn2&quot; dest=&quot;\orderResponse\buyer\organization\inn&quot;/&gt;&lt;Select from=&quot;@organization_kpp2&quot; dest=&quot;\orderResponse\buyer\organization\kpp&quot;/&gt;&lt;Select from=&quot;@estimatedDeliveryDateTime&quot; dest=&quot;\orderResponse\deliveryInfo\estimatedDeliveryDateTime&quot;/&gt;&lt;Select from=&quot;@shipFrom_gln&quot; dest=&quot;\orderResponse\deliveryInfo\shipFrom\gln&quot;/&gt;&lt;Select from=&quot;@shipTo_gln&quot; dest=&quot;\orderResponse\deliveryInfo\shipTo\gln&quot;/&gt;&lt;Select from=&quot;@currencyISOCode&quot; dest=&quot;\orderResponse\lineItems\currencyISOCode&quot;/&gt;&lt;Select from=&quot;@totalSumExcludingTaxes&quot; dest=&quot;\orderResponse\lineItems\totalSumExcludingTaxes&quot;/&gt;&lt;SelectEach from=&quot;lineItem\ROWlineItem&quot; dest=&quot;\orderResponse\lineItems\lineItem&quot;&gt;&lt;Select from=&quot;@status&quot; dest=&quot;@status&quot;/&gt;&lt;Select from=&quot;@gtin&quot; dest=&quot;\gtin&quot;/&gt;&lt;Select from=&quot;@internalBuyerCode&quot; dest=&quot;\internalBuyerCode&quot;/&gt;&lt;Select from=&quot;@internalSupplierCode&quot; dest=&quot;\internalSupplierCode&quot;/&gt;&lt;Select from=&quot;@orderLineNumber&quot; dest=&quot;\orderLineNumber&quot;/&gt;&lt;Select from=&quot;@description&quot; dest=&quot;\description&quot;/&gt;&lt;Select from=&quot;@confirmedQuantity&quot; dest=&quot;\confirmedQuantity&quot;/&gt;&lt;Select from=&quot;@unitOfMeasure&quot; dest=&quot;\confirmedQuantity@unitOfMeasure&quot;/&gt;&lt;Select from=&quot;@orderedQuantity&quot; dest=&quot;\orderedQuantity&quot;/&gt;&lt;Select from=&quot;@unitOfMeasureOrdered&quot; dest=&quot;\orderedQuantity@unitOfMeasure&quot;/&gt;&lt;Select from=&quot;@netPrice&quot; dest=&quot;\netPrice&quot;/&gt;&lt;Select from=&quot;@netPriceWithVAT&quot; dest=&quot;\netPriceWithVAT&quot;/&gt;&lt;Select from=&quot;@netAmount&quot; dest=&quot;\netAmount&quot;/&gt;&lt;Select from=&quot;@amount&quot; dest=&quot;\amount&quot;/&gt;&lt;/SelectEach&gt;&lt;/SelectEach&gt;&lt;/Transform&gt;&lt;XmlSchema RootName=&quot;eDIMessage&quot;&gt;&lt;![CDATA[&lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  &lt;xs:element name=&quot;eDIMessage&quot; type=&quot;eDIMessageType&quot;/&gt;
+  &lt;xs:complexType name=&quot;eDIMessageType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;interchangeHeader&quot; type=&quot;interchangeHeaderType&quot;/&gt;
+      &lt;xs:element name=&quot;orderResponse&quot; type=&quot;orderResponseType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;id&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;creationDateTime&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;interchangeHeader&quot; type=&quot;interchangeHeaderType&quot;/&gt;
+  &lt;xs:complexType name=&quot;interchangeHeaderType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;sender&quot; type=&quot;senderType&quot;/&gt;
+      &lt;xs:element name=&quot;recipient&quot; type=&quot;recipientType&quot;/&gt;
+      &lt;xs:element name=&quot;documentType&quot; type=&quot;documentTypeType&quot;/&gt;
+      &lt;xs:element name=&quot;isTest&quot; type=&quot;isTestType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;sender&quot; type=&quot;senderType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;senderType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;recipient&quot; type=&quot;recipientType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;recipientType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;documentType&quot; type=&quot;documentTypeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;documentTypeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;isTest&quot; type=&quot;isTestType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;isTestType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;orderResponse&quot; type=&quot;orderResponseType&quot;/&gt;
+  &lt;xs:complexType name=&quot;orderResponseType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;originOrder&quot; type=&quot;originOrderType&quot;/&gt;
+      &lt;xs:element name=&quot;blanketOrderIdentificator&quot; type=&quot;blanketOrderIdentificatorType&quot;/&gt;
+      &lt;xs:element name=&quot;seller&quot; type=&quot;sellerType&quot;/&gt;
+      &lt;xs:element name=&quot;buyer&quot; type=&quot;buyerType&quot;/&gt;
+      &lt;xs:element name=&quot;deliveryInfo&quot; type=&quot;deliveryInfoType&quot;/&gt;
+      &lt;xs:element name=&quot;lineItems&quot; type=&quot;lineItemsType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;date&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;originOrder&quot; type=&quot;originOrderType&quot;/&gt;
+  &lt;xs:complexType name=&quot;originOrderType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+    &lt;xs:attribute name=&quot;date&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;blanketOrderIdentificator&quot; type=&quot;blanketOrderIdentificatorType&quot;/&gt;
+  &lt;xs:complexType name=&quot;blanketOrderIdentificatorType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;number&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;seller&quot; type=&quot;sellerType&quot;/&gt;
+  &lt;xs:complexType name=&quot;sellerType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+      &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+  &lt;xs:complexType name=&quot;organizationType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+      &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+      &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;nameType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;innType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;kppType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;buyer&quot; type=&quot;buyerType&quot;/&gt;
+  &lt;xs:complexType name=&quot;buyerType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+      &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;organization&quot; type=&quot;organizationType&quot;/&gt;
+  &lt;xs:complexType name=&quot;organizationType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;name&quot; type=&quot;nameType&quot;/&gt;
+      &lt;xs:element name=&quot;inn&quot; type=&quot;innType&quot;/&gt;
+      &lt;xs:element name=&quot;kpp&quot; type=&quot;kppType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;deliveryInfo&quot; type=&quot;deliveryInfoType&quot;/&gt;
+  &lt;xs:complexType name=&quot;deliveryInfoType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;estimatedDeliveryDateTime&quot; type=&quot;estimatedDeliveryDateTimeType&quot;/&gt;
+      &lt;xs:element name=&quot;shipFrom&quot; type=&quot;shipFromType&quot;/&gt;
+      &lt;xs:element name=&quot;shipTo&quot; type=&quot;shipToType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;estimatedDeliveryDateTime&quot; type=&quot;estimatedDeliveryDateTimeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;estimatedDeliveryDateTimeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;shipFrom&quot; type=&quot;shipFromType&quot;/&gt;
+  &lt;xs:complexType name=&quot;shipFromType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;shipTo&quot; type=&quot;shipToType&quot;/&gt;
+  &lt;xs:complexType name=&quot;shipToType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gln&quot; type=&quot;glnType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;glnType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;lineItems&quot; type=&quot;lineItemsType&quot;/&gt;
+  &lt;xs:complexType name=&quot;lineItemsType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;currencyISOCode&quot; type=&quot;currencyISOCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;lineItem&quot; type=&quot;lineItemType&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;
+      &lt;xs:element name=&quot;totalSumExcludingTaxes&quot; type=&quot;totalSumExcludingTaxesType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;currencyISOCode&quot; type=&quot;currencyISOCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;currencyISOCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;lineItem&quot; type=&quot;lineItemType&quot;/&gt;
+  &lt;xs:complexType name=&quot;lineItemType&quot;&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element name=&quot;gtin&quot; type=&quot;gtinType&quot;/&gt;
+      &lt;xs:element name=&quot;internalBuyerCode&quot; type=&quot;internalBuyerCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;internalSupplierCode&quot; type=&quot;internalSupplierCodeType&quot;/&gt;
+      &lt;xs:element name=&quot;orderLineNumber&quot; type=&quot;orderLineNumberType&quot;/&gt;
+      &lt;xs:element name=&quot;description&quot; type=&quot;descriptionType&quot;/&gt;
+      &lt;xs:element name=&quot;confirmedQuantity&quot; type=&quot;confirmedQuantityType&quot;/&gt;
+      &lt;xs:element name=&quot;orderedQuantity&quot; type=&quot;orderedQuantityType&quot;/&gt;
+      &lt;xs:element name=&quot;netPrice&quot; type=&quot;netPriceType&quot;/&gt;
+      &lt;xs:element name=&quot;netPriceWithVAT&quot; type=&quot;netPriceWithVATType&quot;/&gt;
+      &lt;xs:element name=&quot;netAmount&quot; type=&quot;netAmountType&quot;/&gt;
+      &lt;xs:element name=&quot;amount&quot; type=&quot;amountType&quot;/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attribute name=&quot;status&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;gtin&quot; type=&quot;gtinType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;gtinType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;internalBuyerCode&quot; type=&quot;internalBuyerCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;internalBuyerCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;internalSupplierCode&quot; type=&quot;internalSupplierCodeType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;internalSupplierCodeType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;orderLineNumber&quot; type=&quot;orderLineNumberType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;orderLineNumberType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;description&quot; type=&quot;descriptionType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;descriptionType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;confirmedQuantity&quot; type=&quot;confirmedQuantityType&quot;/&gt;
+  &lt;xs:complexType name=&quot;confirmedQuantityType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;unitOfMeasure&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;orderedQuantity&quot; type=&quot;orderedQuantityType&quot;/&gt;
+  &lt;xs:complexType name=&quot;orderedQuantityType&quot;&gt;
+    &lt;xs:sequence/&gt;
+    &lt;xs:attribute name=&quot;unitOfMeasure&quot; type=&quot;xs:string&quot;/&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name=&quot;netPrice&quot; type=&quot;netPriceType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netPriceType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;netPriceWithVAT&quot; type=&quot;netPriceWithVATType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netPriceWithVATType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;netAmount&quot; type=&quot;netAmountType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;netAmountType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;amount&quot; type=&quot;amountType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;amountType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name=&quot;totalSumExcludingTaxes&quot; type=&quot;totalSumExcludingTaxesType&quot;/&gt;
+  &lt;xs:simpleType name=&quot;totalSumExcludingTaxesType&quot;&gt;
+    &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
+  &lt;/xs:simpleType&gt;
+&lt;/xs:schema&gt;]]&gt;&lt;/XmlSchema&gt;&lt;CdsSkeleton&gt;&lt;![CDATA[&lt;DATAPACKET Version=&quot;2.0&quot;&gt;&lt;METADATA&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;id&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;creationDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;sender&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;recipient&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;documentType&quot; fieldtype=&quot;string&quot; WIDTH=&quot;6&quot;/&gt;&lt;FIELD attrname=&quot;isTest&quot; fieldtype=&quot;string&quot; WIDTH=&quot;1&quot;/&gt;&lt;FIELD attrname=&quot;number1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;number2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;number3&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;seller_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;buyer_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;estimatedDeliveryDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;shipFrom_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;shipTo_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;currencyISOCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;totalSumExcludingTaxes&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;lineItem&quot; fieldtype=&quot;nested&quot;&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;gtin&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;internalBuyerCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;internalSupplierCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;orderLineNumber&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;description&quot; fieldtype=&quot;string&quot; WIDTH=&quot;150&quot;/&gt;&lt;FIELD attrname=&quot;confirmedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasure&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;orderedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasureOrdered&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;netPrice&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netPriceWithVAT&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netAmount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;amount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/FIELD&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/METADATA&gt;&lt;ROWDATA/&gt;&lt;METADATA&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;id&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;creationDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;sender&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;recipient&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;documentType&quot; fieldtype=&quot;string&quot; WIDTH=&quot;6&quot;/&gt;&lt;FIELD attrname=&quot;isTest&quot; fieldtype=&quot;string&quot; WIDTH=&quot;1&quot;/&gt;&lt;FIELD attrname=&quot;number1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;number2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;20&quot;/&gt;&lt;FIELD attrname=&quot;date2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;number3&quot; fieldtype=&quot;string&quot; WIDTH=&quot;10&quot;/&gt;&lt;FIELD attrname=&quot;seller_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp1&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;buyer_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;organization_name2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;50&quot;/&gt;&lt;FIELD attrname=&quot;organization_inn2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;organization_kpp2&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;estimatedDeliveryDateTime&quot; fieldtype=&quot;string&quot; WIDTH=&quot;19&quot;/&gt;&lt;FIELD attrname=&quot;shipFrom_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;shipTo_gln&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;currencyISOCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;totalSumExcludingTaxes&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;lineItem&quot; fieldtype=&quot;nested&quot;&gt;&lt;FIELDS&gt;&lt;FIELD attrname=&quot;status&quot; fieldtype=&quot;string&quot; WIDTH=&quot;15&quot;/&gt;&lt;FIELD attrname=&quot;gtin&quot; fieldtype=&quot;string&quot; WIDTH=&quot;13&quot;/&gt;&lt;FIELD attrname=&quot;internalBuyerCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;internalSupplierCode&quot; fieldtype=&quot;string&quot; WIDTH=&quot;12&quot;/&gt;&lt;FIELD attrname=&quot;orderLineNumber&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;description&quot; fieldtype=&quot;string&quot; WIDTH=&quot;150&quot;/&gt;&lt;FIELD attrname=&quot;confirmedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasure&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;orderedQuantity&quot; fieldtype=&quot;string&quot; WIDTH=&quot;2&quot;/&gt;&lt;FIELD attrname=&quot;unitOfMeasureOrdered&quot; fieldtype=&quot;string&quot; WIDTH=&quot;3&quot;/&gt;&lt;FIELD attrname=&quot;netPrice&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netPriceWithVAT&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;netAmount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;FIELD attrname=&quot;amount&quot; fieldtype=&quot;string&quot; WIDTH=&quot;9&quot;/&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/FIELD&gt;&lt;/FIELDS&gt;&lt;PARAMS/&gt;&lt;/METADATA&gt;&lt;ROWDATA/&gt;&lt;/DATAPACKET&gt;
+]]&gt;&lt;/CdsSkeleton&gt;&lt;XslTransform/&gt;&lt;Skeleton&gt;&lt;![CDATA[&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;eDIMessage id=&quot;000001520&quot; creationDateTime=&quot;2013-09-27T00:00:00&quot;&gt;
+    &lt;!--идентификатор сообщения, время сообщения--&gt;
+    &lt;!-- начало заголовка сообщения --&gt;
+    &lt;interchangeHeader&gt;
+        &lt;sender&gt;&lt;/sender&gt;
+        &lt;!--GLN отправителя сообщения--&gt;
+        &lt;recipient&gt;&lt;/recipient&gt;
+        &lt;!--GLN получателя сообщения--&gt;
+        &lt;documentType&gt;&lt;/documentType&gt;
+        &lt;isTest&gt;&lt;/isTest&gt;
+        &lt;!--тестовый флаг--&gt;
+    &lt;/interchangeHeader&gt;
+    &lt;orderResponse number=&quot;&quot; date=&quot;&quot; status=&quot;&quot;&gt;
+        &lt;!--номер документа-респонса, дата документа-респонса, статус документа: Changed - уточнен, Rejected - отклонен, Accepted - подтвержден--&gt;
+        &lt;originOrder number=&quot;&quot; date=&quot;&quot;/&gt;
+        &lt;!--номер заказа, дата заказа--&gt;
+        &lt;blanketOrderIdentificator number=&quot;&quot;/&gt;
+        &lt;!--номер серии заказов--&gt;
+        &lt;seller&gt;
+            &lt;gln&gt;&lt;/gln&gt;
+            &lt;!--gln поставщика--&gt;
+            &lt;organization&gt;
+                &lt;name&gt;&lt;/name&gt;
+                &lt;!--наименование поставщика для ЮЛ--&gt;
+                &lt;inn&gt;&lt;/inn&gt;
+                &lt;!--ИНН поставщика для ЮЛ--&gt;
+                &lt;kpp&gt;&lt;/kpp&gt;
+                &lt;!--КПП поставщика только для ЮЛ--&gt;
+            &lt;/organization&gt;
+        &lt;/seller&gt;
+        &lt;buyer&gt;
+            &lt;gln&gt;&lt;/gln&gt;
+            &lt;!--gln покупателя--&gt;
+            &lt;organization&gt;
+                &lt;name&gt;&lt;/name&gt;
+                &lt;!--наименование покупателя--&gt;
+                &lt;inn&gt;&lt;/inn&gt;
+                &lt;!--ИНН покупателя для ЮЛ--&gt;
+                &lt;kpp&gt;&lt;/kpp&gt;
+                &lt;!--КПП покупателя только для ЮЛ--&gt;
+            &lt;/organization&gt;
+        &lt;/buyer&gt;
+        &lt;deliveryInfo&gt;
+            &lt;estimatedDeliveryDateTime&gt;&lt;/estimatedDeliveryDateTime&gt;
+            &lt;!--дата доставки--&gt;
+            &lt;shipFrom&gt;
+                &lt;gln&gt;&lt;/gln&gt;
+                &lt;!--gln грузоотправителя--&gt;
+            &lt;/shipFrom&gt;
+            &lt;shipTo&gt;
+                &lt;gln&gt;&lt;/gln&gt;
+                &lt;!--gln грузополучателя--&gt;
+            &lt;/shipTo&gt;
+        &lt;/deliveryInfo&gt;
+        &lt;lineItems&gt;
+            &lt;currencyISOCode&gt;&lt;/currencyISOCode&gt;
+            &lt;!--код валюты (по умолчанию рубли)--&gt;
+            &lt;lineItem status=&quot;&quot;&gt;
+                &lt;!--статус подтверждения строки заказа: Changed - уточнен, Rejected - отклонен, Accepted - подтвержден--&gt;
+                &lt;gtin&gt;&lt;/gtin&gt;
+                &lt;!--GTIN товара--&gt;
+                &lt;internalBuyerCode&gt;&lt;/internalBuyerCode&gt;
+                &lt;!--внутренний код присвоенный покупателем--&gt;
+                &lt;internalSupplierCode&gt;&lt;/internalSupplierCode&gt;
+                &lt;!--артикул товара (код товара присвоенный продавцом)--&gt;
+                &lt;orderLineNumber&gt;&lt;/orderLineNumber&gt;
+                &lt;!--порядковый номер товара--&gt;
+                &lt;description&gt;&lt;/description&gt;
+                &lt;!--название товара--&gt;
+                &lt;confirmedQuantity unitOfMeasure=&quot;&quot;&gt;&lt;/confirmedQuantity&gt;
+                &lt;!--заказанное количество--&gt;
+                &lt;orderedQuantity unitOfMeasure=&quot;&quot;&gt;&lt;/orderedQuantity&gt;
+                &lt;!--подтвержденное количество--&gt;
+                &lt;netPrice&gt;&lt;/netPrice&gt;
+                &lt;!--цена товара без НДС--&gt;
+                &lt;netPriceWithVAT&gt;&lt;/netPriceWithVAT&gt;
+                &lt;!--цена товара с НДС--&gt;
+                &lt;netAmount&gt;&lt;/netAmount&gt;
+                &lt;!--сумма по позиции без НДС--&gt;
+                &lt;amount&gt;&lt;/amount&gt;
+                &lt;!--сумма по позиции с НДС--&gt;
+            &lt;/lineItem&gt;
+            &lt;totalSumExcludingTaxes&gt;&lt;/totalSumExcludingTaxes&gt;
+            &lt;!--сумма заявки без НДС--&gt;
+        &lt;/lineItems&gt;
+    &lt;/orderResponse&gt;
+&lt;/eDIMessage&gt;
+]]&gt;&lt;/Skeleton&gt;&lt;/XmlTransformation&gt;
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Exite/Exite/" class="btn btn-neutral float-left" title="152 Exite"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../arx/arx/" class="btn btn-neutral float-right" title="arx">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../Exite/Exite/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../arx/arx/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
