@@ -50,6 +50,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#recadv">RECADV</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#invoic-r260-kod-279">INVOIC (R260-&gt;KOD = 279)</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#orderresponsexsd">OrderResponse.xsd</a>
     </li>
     </ul>
@@ -458,6 +460,106 @@
     &lt;/lineItems&gt;
   &lt;/receivingAdvice&gt;
 &lt;/eDIMessage&gt;
+</code></pre>
+<h2 id="invoic-r260-kod-279">INVOIC (R260-&gt;KOD = 279)</h2>
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+    &lt;eDIMessage id=&quot;784512_A2C1F9D4-77E6-4B9F-8F25-56B97E0D7D91&quot;&gt;
+        &lt;interchangeHeader&gt;
+            &lt;sender&gt;4611223344556&lt;/sender&gt;
+            &lt;recipient&gt;4699888770001&lt;/recipient&gt;
+            &lt;documentType&gt;INVOIC&lt;/documentType&gt;
+        &lt;/interchangeHeader&gt;
+        &lt;invoice number=&quot;784512&quot; date=&quot;2025-09-04&quot; type=&quot;Original&quot;&gt;
+            &lt;originOrder number=&quot;39572146&quot; date=&quot;2025-09-03&quot;/&gt;
+            &lt;contractIdentificator number=&quot;12/21&quot; date=&quot;2021-05-10&quot;/&gt;
+            &lt;despatchIdentificator number=&quot;2056789012&quot; date=&quot;2025-09-04&quot;/&gt;
+            &lt;receivingIdentificator number=&quot;5034567890&quot; date=&quot;2025-09-04&quot;/&gt;
+            &lt;seller&gt;
+                &lt;gln&gt;4611223344556&lt;/gln&gt;
+                &lt;organization&gt;
+                    &lt;name&gt;ООО &quot;Краснодарский мясокомбинат&quot;&lt;/name&gt;
+                    &lt;inn&gt;2310023456&lt;/inn&gt;
+                    &lt;kpp&gt;231001001&lt;/kpp&gt;
+                &lt;/organization&gt;
+                &lt;russianAddress&gt;
+                    &lt;regionISOCode&gt;RU-KDA&lt;/regionISOCode&gt;
+                    &lt;city&gt;Краснодар г&lt;/city&gt;
+                    &lt;street&gt;Северная ул&lt;/street&gt;
+                    &lt;house&gt;125&lt;/house&gt;
+                    &lt;postalCode&gt;350001&lt;/postalCode&gt;
+                &lt;/russianAddress&gt;
+                &lt;additionalIdentificator /&gt;
+            &lt;/seller&gt;
+            &lt;buyer&gt;
+                &lt;gln&gt;4699888770001&lt;/gln&gt;
+                &lt;organization&gt;
+                    &lt;name&gt;ЗАО &quot;Торговая сеть Виктория&quot;&lt;/name&gt;
+                    &lt;inn&gt;7701456789&lt;/inn&gt;
+                    &lt;kpp&gt;770101001&lt;/kpp&gt;
+                &lt;/organization&gt;
+                &lt;russianAddress&gt;
+                    &lt;regionISOCode&gt;RU-MOS&lt;/regionISOCode&gt;
+                    &lt;street&gt;Ленинградский пр-кт&lt;/street&gt;
+                    &lt;house&gt;54&lt;/house&gt;
+                    &lt;postalCode&gt;125195&lt;/postalCode&gt;
+                    &lt;settlement&gt;Москва г&lt;/settlement&gt;
+                &lt;/russianAddress&gt;
+                &lt;additionalIdentificator /&gt;
+            &lt;/buyer&gt;
+            &lt;deliveryInfo&gt;
+                &lt;shipFrom&gt;
+                    &lt;gln&gt;4611223344556&lt;/gln&gt;
+                    &lt;organization&gt;
+                        &lt;name&gt;ООО &quot;Краснодарский мясокомбинат&quot;&lt;/name&gt;
+                        &lt;inn&gt;2310023456&lt;/inn&gt;
+                        &lt;kpp&gt;231001001&lt;/kpp&gt;
+                    &lt;/organization&gt;
+                    &lt;russianAddress&gt;
+                        &lt;regionISOCode&gt;RU-KDA&lt;/regionISOCode&gt;
+                        &lt;city&gt;Краснодар г&lt;/city&gt;
+                        &lt;street&gt;Северная ул&lt;/street&gt;
+                        &lt;house&gt;125&lt;/house&gt;
+                        &lt;postalCode&gt;350001&lt;/postalCode&gt;
+                    &lt;/russianAddress&gt;
+                &lt;/shipFrom&gt;
+                &lt;shipTo&gt;
+                    &lt;gln&gt;4699888770002&lt;/gln&gt;
+                    &lt;organization&gt;
+                        &lt;name&gt;ЗАО &quot;Торговая сеть Виктория&quot;&lt;/name&gt;
+                        &lt;inn&gt;7701456789&lt;/inn&gt;
+                        &lt;kpp&gt;770101001&lt;/kpp&gt;
+                    &lt;/organization&gt;
+                    &lt;russianAddress&gt;
+                        &lt;regionISOCode&gt;RU-MOS&lt;/regionISOCode&gt;
+                        &lt;district&gt;м.р-н Северный&lt;/district&gt;
+                        &lt;house&gt;корп. 3&lt;/house&gt;
+                        &lt;postalCode&gt;127642&lt;/postalCode&gt;
+                        &lt;settlement&gt;Москва г, жилой массив&lt;/settlement&gt;
+                    &lt;/russianAddress&gt;
+                &lt;/shipTo&gt;
+            &lt;/deliveryInfo&gt;
+            &lt;lineItems&gt;
+                &lt;currencyISOCode&gt;RUB&lt;/currencyISOCode&gt;
+                &lt;lineItem&gt;
+                    &lt;orderLineNumber&gt;1&lt;/orderLineNumber&gt;
+                    &lt;gtin&gt;4611223300123&lt;/gtin&gt;
+                    &lt;internalBuyerCode&gt;901234567&lt;/internalBuyerCode&gt;
+                    &lt;internalSupplierCode&gt;4521&lt;/internalSupplierCode&gt;
+                    &lt;description&gt;Сосиски молочные 1 кг упак.&lt;/description&gt;
+                    &lt;quantity unitOfMeasure=&quot;PCE&quot;&gt;8.000&lt;/quantity&gt;
+                    &lt;onePlaceQuantity unitOfMeasure=&quot;PCE&quot;&gt;5&lt;/onePlaceQuantity&gt;
+                    &lt;netPrice&gt;180.50&lt;/netPrice&gt;
+                    &lt;netAmount&gt;1444.00&lt;/netAmount&gt;
+                    &lt;amount&gt;1732.80&lt;/amount&gt;
+                    &lt;vATAmount&gt;288.80&lt;/vATAmount&gt;
+                    &lt;vATRate&gt;20&lt;/vATRate&gt;
+                &lt;/lineItem&gt;
+                &lt;totalSumExcludingTaxes&gt;1444.00&lt;/totalSumExcludingTaxes&gt;
+                &lt;totalVATAmount&gt;288.80&lt;/totalVATAmount&gt;
+                &lt;totalAmount&gt;1732.80&lt;/totalAmount&gt;
+            &lt;/lineItems&gt;
+        &lt;/invoice&gt;
+    &lt;/eDIMessage&gt;
 </code></pre>
 <h2 id="orderresponsexsd">OrderResponse.xsd</h2>
 <pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
