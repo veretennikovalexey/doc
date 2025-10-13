@@ -16,3 +16,7 @@ theme:
   name: readthedocs
 
 mkdocs serve
+
+
+
+![Альт-текст](images/diagram.png)
